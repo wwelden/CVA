@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "originalObjectIDsPreserved": true,
+  "liveTextBindingsPreserved": 5,
+  "gameplayScriptsUnchanged": true,
+  "bonusCalculationUnchanged": true,
+  "automaticBattleTransitionSeconds": 6,
+  "newReceiptChildren": 23,
+  "layouts": [
+    {
+      "aspect": "16:9",
+      "paperVisible": true,
+      "contentWithinPaper": true
+    },
+    {
+      "aspect": "16:10",
+      "paperVisible": true,
+      "contentWithinPaper": true
+    },
+    {
+      "aspect": "4:3",
+      "paperVisible": true,
+      "contentWithinPaper": true
+    }
+  ],
+  "nativePreview": "Scene-data reconstruction, sample counts 24/18/9, total 51 and wave 3; approximate font rendering, not a Unity screenshot.",
+  "unityPlaytest": "Pending; previous Unity batch launch failed during Package Manager startup before asset import."
+}
