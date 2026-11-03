@@ -8,6 +8,9 @@ public class AlienShot : MonoBehaviour
     private Rigidbody2D rb;
     public float mSpeed;
     public GameObject shot;
+    public GameObject impactPrefab;
+    private bool impacted;
+    private const float ImpactLifetime = 0.3f;
     int count;
     void Start()
     {
@@ -26,7 +29,13 @@ public class AlienShot : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("Food")){    
+        if (!impacted && other.gameObject.CompareTag("Food")){
+            impacted = true;
+            if (impactPrefab != null)
+            {
+                GameObject impact = Instantiate(impactPrefab, transform.position, Quaternion.identity);
+                Destroy(impact, ImpactLifetime);
+            }
             Destroy(shot.gameObject);
         }
     }

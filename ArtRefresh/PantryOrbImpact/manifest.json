@@ -1,0 +1,23 @@
+{
+  "name": "Purple orb hit effect",
+  "ids": {
+    "atlas": "0a694b84ca1420b72871a4c045a45d4b",
+    "clip": "c10638a796973031eeb3a31365cadf21",
+    "controller": "1855cb8b95437f5bb85ed46cf4c7c46a",
+    "prefab": "2baa513b2a50ff1ec14f9af925215bd3"
+  },
+  "frames": 6,
+  "fps": 20,
+  "durationSeconds": 0.3,
+  "atlas": {
+    "width": 768,
+    "height": 512,
+    "cell": 256,
+    "pixelsPerUnit": 256,
+    "prefabScale": 0.9
+  },
+  "trigger": "AlienShot first Food trigger only",
+  "cleanup": "Destroy(effect, 0.3f), scaled Unity time",
+  "generation": "Built-in imagegen from extracted projectile reference; Sharp slices fixed cells without fitting individual alpha bounds. 16-pixel transparent gutter per cell.",
+  "preview": "Composited art/timing showcase; no Unity engine capture."
+}

@@ -35,6 +35,10 @@ public static class ProwlerWalkCheck
             var shotBinding = AnimationUtility.GetObjectReferenceCurveBindings(shoot).Single();
             Check(shotBinding.path == "" && shotBinding.propertyName == "m_Sprite", "Sprite-only shot clip");
             Check(AnimationUtility.GetObjectReferenceCurve(shoot, shotBinding).All(k => k.value != null), "Shot sprite references resolve");
+            var effectClip = AssetDatabase.LoadAssetAtPath<AnimationClip>("Assets/PantryOrbImpact.anim");
+            Check(effectClip != null && !effectClip.isLooping && Mathf.Abs(effectClip.length - .3f) < .001f, "Impact clip duration");
+            var effect = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Resources/Prefabs/PantryOrbImpact.prefab");
+            Check(effect != null && effect.GetComponent<Collider2D>() == null && effect.GetComponent<Rigidbody2D>() == null, "Impact is visuals only");
             var prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Resources/Prefabs/Shooter.prefab");
             var go = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
             var animator = go.GetComponent<Animator>();
