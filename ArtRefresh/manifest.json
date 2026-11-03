@@ -1,0 +1,225 @@
+{
+  "mode": "Built-in image_gen",
+  "reference": "Assets/Sprites/SaladEyes Background Removed.png",
+  "baseCommit": "acaa6d23bc69df392fd15a2c03a8d70ef838bb1e",
+  "assets": [
+    {
+      "key": "tabletop",
+      "path": "Assets/Sprites/fork2.jpg",
+      "original": [
+        480,
+        320
+      ],
+      "generated": [
+        1536,
+        1024
+      ],
+      "replacement": [
+        1440,
+        960
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "7e99aed0d0c9eed4d93cb79ef1a54d1b",
+      "refs": [
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 3:2. Overhead warm golden-brown wooden tabletop, burgundy/white gingham cloth at left 14%, metal four-tine fork at x75% with tines up, brown handled knife at x86% blade up. Retain original position and proportions of each object. Leave center and center-left entirely empty wood for existing menu overlay. Simplify wood grain into clean illustrated curves."
+    },
+    {
+      "key": "lasagna",
+      "path": "Assets/Sprites/Screenshot 2024-12-16 115522.png",
+      "original": [
+        412,
+        278
+      ],
+      "generated": [
+        1527,
+        1030
+      ],
+      "replacement": [
+        1648,
+        1112
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 2048,
+      "guid": "470518d75d2cdf2479f828b61cb105ae",
+      "refs": [
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 412:278. A layered rectangular lasagna serving on reddish terracotta round plate, basil garnish atop golden cheese, red-white gingham napkin and rustic wood table, subtle tomato/basil/glass forms in background. Preserve source food scale, plate position and overall composition. Render appetizing food as cartoon illustration with thick outlines, as in the salad reference."
+    },
+    {
+      "key": "pie-oven",
+      "path": "Assets/Sprites/pieOven.jpg",
+      "original": [
+        470,
+        368
+      ],
+      "generated": [
+        1417,
+        1110
+      ],
+      "replacement": [
+        1410,
+        1104
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "e5063472c4dac444f9e83b4da00f06bb",
+      "refs": [
+        "Assets/Scenes/OvenStart.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 470:368. Front-facing open oven with dark navy-purple cavity, pale gray outer sides, violet horizontal metal rack and round golden lattice pie centered on rack in lower middle. Thin illustrated steam curls. Open lavender glass oven door extends toward viewer at bottom. Preserve oven opening, rack, pie positions from original."
+    },
+    {
+      "key": "brick-oven",
+      "path": "Assets/Sprites/Oven.jpg",
+      "original": [
+        612,
+        459
+      ],
+      "generated": [
+        1448,
+        1086
+      ],
+      "replacement": [
+        1224,
+        918
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "aeadb9e8871a2bf438709ae4ec0d7be2",
+      "refs": [
+        "Assets/Scenes/OvenMinigame.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 4:3. Red-orange brick wall filling frame, large semicircular brick oven arch centered, empty dark oven cavity and warm orange glow at base, pale golden projecting horizontal hearth across lower quarter. Preserve opening and hearth positions for existing gameplay overlay. Crisp rounded outlined bricks, same warm palette."
+    },
+    {
+      "key": "kitchen",
+      "path": "Assets/Sprites/Screenshot 2024-11-13 100538.png",
+      "original": [
+        518,
+        511
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1036,
+        1022
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "3afb02a9b66350145b56af22fcd3b1af",
+      "refs": [
+        "Assets/LCProject.unity",
+        "Assets/Scenes/LasagnaMiniGame.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Almost square 518:511. Front-facing compact kitchen: sage-green upper walls, large centered silver extractor hood, dark brown lower cabinets with silver handles, off-white tiled backsplash, warm wood counters, centered sink and curved faucet, stove at far right edge, narrow dark window far left, shelf with bowls upper left and cutting boards/utensils to right, wood floor below. Preserve original layout and all major silhouettes. Apply same outlined cartoon world style as salad bowl."
+    },
+    {
+      "key": "veggie-board",
+      "path": "Assets/Sprites/veggie.jpg",
+      "original": [
+        700,
+        547
+      ],
+      "generated": [
+        1419,
+        1109
+      ],
+      "replacement": [
+        1400,
+        1094
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "db6ada91fc69e214f83a0e0c3a0a9045",
+      "refs": [
+        "Assets/Scenes/VeggieStart.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 700:547. White backdrop, golden wood rectangular chopping-board sign centered, broad EMPTY central area reserved for existing rules UI. Edge framing vegetables only: green pepper upper left, red tomato middle left, round pale green cabbage lower left, red pepper upper right, orange carrot along right, dark green cabbage lower right, green vines at top and bottom. Preserve original positions and proportions. Match illustrated leaf contours and highlights to salad reference."
+    },
+    {
+      "key": "lasagna-example",
+      "path": "Assets/Sprites/Screenshot 2024-11-27 092111.png",
+      "original": [
+        156,
+        185
+      ],
+      "generated": [
+        1152,
+        1365
+      ],
+      "replacement": [
+        1092,
+        1295
+      ],
+      "scale": 7,
+      "ppu": 700,
+      "maxTextureSize": 2048,
+      "guid": "c236aaea04ad37a4fba09914706b9d68",
+      "refs": [
+        "Assets/Scenes/LasagnaStartGame.unity",
+        "Assets/Scenes/LasagnaMiniGame.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Portrait 156:185. Lasagna ingredient stack example diagram: three golden wavy pasta sheets arranged vertically at y12%,40%,65%; pale cream shredded cheese and bright red sauce BETWEEN sheets. Blue-violet round plate at y88%, muted brown kitchen cabinet background with horizontal wooden strips. Preserve clear ingredient order and layout, bold readable shapes."
+    },
+    {
+      "key": "cookbook",
+      "path": "Assets/Sprites/RedCookbook.jpg",
+      "original": [
+        600,
+        400
+      ],
+      "generated": [
+        1536,
+        1024
+      ],
+      "replacement": [
+        1800,
+        1200
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "a16b61e018b09f84a826e8cf81f57359",
+      "refs": [
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Landscape 3:2. Top-down open cookbook with dark red-brown cover, cream pages spanning x25%-89%, y20%-87%, central vertical page fold x59%. Long pale wooden spoon vertically down left at x15%, bowl end upper left. Red-white gingham tablecloth fills background. Keep BOTH pages completely blank, evenly pale cream, for existing UI text overlays. Preserve original layout. Bold cartoon outlined contours, two-tone shapes, smooth curved paper."
+    },
+    {
+      "key": "pie",
+      "path": "Assets/Sprites/Screenshot 2024-12-16 115435.png",
+      "original": [
+        612,
+        585
+      ],
+      "generated": [
+        1283,
+        1226
+      ],
+      "replacement": [
+        1224,
+        1170
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "4cf71a01c384b864e9877bb1c34fe4b3",
+      "refs": [
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Nearly square 612:585. Top-down round caramel cream dessert pie on rustic beige round ceramic plate, nearly fills frame. Cream and caramel swirled surface, circular ring of piped cream rosettes with caramel drizzle, thin golden crust; dark warm brown horizontal wood planks behind, tiny fork sliver at right edge. Preserve original composition. Cartoon cream and crust with bold clean outlines and cel-shaded highlights."
+    }
+  ]
+}

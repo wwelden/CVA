@@ -1,0 +1,1289 @@
+[
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+    "width": 512,
+    "height": 512,
+    "guid": "dffef66376be4fa480fb02b19edbe903",
+    "ppu": 100,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": [
+      "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-13 165130.png",
+    "width": 1017,
+    "height": 634,
+    "guid": "70a956cbd6034d541b600e1be25ae3f8",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-12-14 115728.png",
+    "width": 799,
+    "height": 527,
+    "guid": "d452d794ae348de44b66bef4e28f9cc2",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/LasagnaStartGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/border.png",
+    "width": 1300,
+    "height": 689,
+    "guid": "bf81f1c726d7f5244b096bcf92bc6164",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/UldKlQF2.png",
+    "width": 620,
+    "height": 143,
+    "guid": "567069154fcf38641a9f88ea7bc82812",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity",
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Enemy.png",
+    "width": 256,
+    "height": 256,
+    "guid": "844b14f8dc5094ca39ed0b3a04a325cd",
+    "ppu": 256,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/boch choy.png",
+    "width": 612,
+    "height": 612,
+    "guid": "c81d5752dcef34404938497926782a2b",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Bok Choy.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Purple orb.png",
+    "width": 947,
+    "height": 843,
+    "guid": "f0cae282de96c4e22934b4181e7db122",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Blast.prefab",
+      "Assets/Resources/Prefabs/Beam.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/RedCookbook.jpg",
+    "width": 600,
+    "height": 400,
+    "guid": "a16b61e018b09f84a826e8cf81f57359",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Blue Professional Modern Tailor & Boutique Service Invoice.png",
+    "width": 1545,
+    "height": 2000,
+    "guid": "c282326168b187b42ae04781bfa6d0f7",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/EndPrepTime.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Pancakes.png",
+    "width": 986,
+    "height": 568,
+    "guid": "85a45f368decb4acd84f8734a91c33e6",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Resources/Prefabs/Pancakes.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/PlayStation - Xenogears - Aveh Chef.png",
+    "width": 480,
+    "height": 384,
+    "guid": "60ae1250c280c0b41827b2581c667b61",
+    "ppu": 100,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity",
+      "Assets/ChefWalkUp.anim",
+      "Assets/ChefWalkDOwn.anim",
+      "Assets/ChefWalkRight.anim",
+      "Assets/Idle.anim"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Lasanga 1.png",
+    "width": 626,
+    "height": 626,
+    "guid": "0c0c91ddaf7c0453fb3398fca2729b9c",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/blackborder.png",
+    "width": 1024,
+    "height": 1024,
+    "guid": "454ccdcf1a3c3694fb339a95b916d683",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity",
+      "Assets/Scenes/LasagnaStartGame.unity",
+      "Assets/Scenes/MainMenu.unity",
+      "Assets/Scenes/VeggieStart.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/SaladEyes Background Removed.png",
+    "width": 966,
+    "height": 662,
+    "guid": "50a5a9a947eb546e3b4e0c47493b352e",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Resources/Prefabs/Salad.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Red Sauce.png",
+    "width": 362,
+    "height": 140,
+    "guid": "c3c6160d297bf4446beb183cd21e7304",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Sauce.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/whiteRect.png",
+    "width": 180,
+    "height": 180,
+    "guid": "6f8f1a711cdf78946be709c76b0f8618",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity",
+      "Assets/Scenes/OvenMinigame.unity",
+      "Assets/Scenes/LasagnaStartGame.unity",
+      "Assets/Scenes/SaladGame.unity",
+      "Assets/Scenes/VeggieStart.unity",
+      "Assets/Scenes/OvenStart.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/winbackground.jpg",
+    "width": 2879,
+    "height": 1799,
+    "guid": "9d2f2dc20226a6e4a919f8eda8a510ed",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-18 113755.png",
+    "width": 370,
+    "height": 49,
+    "guid": "1e319a46e438b8f4fa5ca3d84d7d55b9",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/kitchen-interior-flat-style-with-range-hood-and-cooker-flat-kitchen-interior-with-cooking-tools-vector-1.jpg",
+    "width": 1307,
+    "height": 980,
+    "guid": "8bbb05bef071f415980631c6460a319a",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/SaladGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-18 115124.png",
+    "width": 142,
+    "height": 40,
+    "guid": "206fb653c33be5243a23cad991374609",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-27 092111.png",
+    "width": 156,
+    "height": 185,
+    "guid": "c236aaea04ad37a4fba09914706b9d68",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/LasagnaStartGame.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Alien3.png",
+    "width": 900,
+    "height": 660,
+    "guid": "24d584c85498649039523011d3c71a0f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/WaveTransition.unity",
+      "Assets/Resources/Prefabs/Shooter.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Alien4 1.png",
+    "width": 626,
+    "height": 626,
+    "guid": "baca34377c71a45569df4b939bdaa341",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/WaveTransition.unity",
+      "Assets/Resources/Prefabs/Brute.prefab",
+      "Assets/Resources/Prefabs/Enemy.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/chefHat.png",
+    "width": 920,
+    "height": 814,
+    "guid": "90f79e3b4620f1d4488de2e27b590fdf",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity",
+      "Assets/Scenes/MainMenu.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/sauce.png",
+    "width": 438,
+    "height": 115,
+    "guid": "e471a372bb0e35e45aa410b1ab2ef402",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/alien2.png",
+    "width": 181,
+    "height": 256,
+    "guid": "72a1edf1cc5e147e4a4cd34a139a5397",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Brussel Sprout.png",
+    "width": 302,
+    "height": 280,
+    "guid": "4f64c685eca4b4824920ca9203f1cdf7",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Crockery_On_The_Wall_Shelf_Free_Vector.jpg",
+    "width": 357,
+    "height": 200,
+    "guid": "c16886ef81a45497b815121c2ad1484d",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Game-Over-Icon-Transparent-PNG.png",
+    "width": 512,
+    "height": 377,
+    "guid": "c880a0485d708cc429235487126ddbb5",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/whiteCircle.png",
+    "width": 2058,
+    "height": 2058,
+    "guid": "6684bf75b753bc14081d82292ceb80e8",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/earth.png",
+    "width": 600,
+    "height": 600,
+    "guid": "70dc6c627b44242d897b5b9b6cc51415",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/CutScene1.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Brown Traditional Indonesian Food Menu Flyer (4).png",
+    "width": 1545,
+    "height": 2000,
+    "guid": "0e96c256f69163d4e8c55a826882cc2b",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-12-16 115522.png",
+    "width": 412,
+    "height": 278,
+    "guid": "470518d75d2cdf2479f828b61cb105ae",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/fullKitchen.jpg",
+    "width": 493,
+    "height": 350,
+    "guid": "6a9cba8faf6555d4fabc813c2de212f6",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Streetview.png",
+    "width": 2226,
+    "height": 1252,
+    "guid": "153b6b48c50254851928ee1e3ed910fb",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/CutScene2.unity",
+      "Assets/Scenes/CutScene/WaveTransition.unity",
+      "Assets/Scenes/CutScene/CutScene3.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Food.png",
+    "width": 256,
+    "height": 256,
+    "guid": "5acb6ae03be564f9d94931b8a8442dc1",
+    "ppu": 256,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/slice-red-tomato-isolated-on-600nw-1993254104 Background Removed.png",
+    "width": 600,
+    "height": 600,
+    "guid": "310eaa83cd0dc4f65879be80b461accf",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/tomato.prefab",
+      "Assets/Resources/Prefabs/Salad/Tomato.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/PieMan.png",
+    "width": 360,
+    "height": 385,
+    "guid": "70f998295683cf84db822ea4c4868521",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/OvenMinigame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-13 165951.png",
+    "width": 1168,
+    "height": 621,
+    "guid": "802a2a23f1e341b459c2b44497e80889",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-07 083814.png",
+    "width": 155,
+    "height": 209,
+    "guid": "2291f89839ed36848826c28d3e47fb2f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/LCProject.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/brussle sprouts.png",
+    "width": 980,
+    "height": 980,
+    "guid": "4d25f5fb03b1f40cc8410f3533fd3840",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Brussel Sprout.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Cheese Sprite (Real).png",
+    "width": 513,
+    "height": 195,
+    "guid": "94af039beb5a89c4b9e5be5a12f546f0",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Cheese.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Alien.png",
+    "width": 182,
+    "height": 256,
+    "guid": "b01ebb5b0a8cc4c6682877ef6d53bf75",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-12 085601.png",
+    "width": 274,
+    "height": 310,
+    "guid": "8fc3febbfc53837498a81d66726aa00a",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/fork2.jpg",
+    "width": 480,
+    "height": 320,
+    "guid": "7e99aed0d0c9eed4d93cb79ef1a54d1b",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot_2024-11-04_12.55.45_PM-removebg-preview.png",
+    "width": 445,
+    "height": 107,
+    "guid": "c3a843ff0d612784e96002b3482ecc64",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Pasta.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/lasanga.png",
+    "width": 838,
+    "height": 619,
+    "guid": "b11a48ec6a0e04f48bab8f33675af4e6",
+    "ppu": 100,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/TempTicker.png",
+    "width": 360,
+    "height": 360,
+    "guid": "fb28eaaf8ba639d419899e85e750e7db",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/OvenMinigame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/veggie.jpg",
+    "width": 700,
+    "height": 547,
+    "guid": "db6ada91fc69e214f83a0e0c3a0a9045",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/VeggieStart.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/gameOver.png",
+    "width": 500,
+    "height": 221,
+    "guid": "d269dc14b02842640b8ba4c4dbe89757",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-13 100538.png",
+    "width": 518,
+    "height": 511,
+    "guid": "3afb02a9b66350145b56af22fcd3b1af",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/LCProject.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-21 142308.png",
+    "width": 114,
+    "height": 27,
+    "guid": "596b618bc6cb9a840958fca1e85efc13",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/knifeBackground.png",
+    "width": 1024,
+    "height": 1024,
+    "guid": "b58bca21bea98b74aa6542a57bda7cff",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/VeggieStart.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/open circle1.png",
+    "width": 980,
+    "height": 980,
+    "guid": "cf29cfb6c6ce6944880a23862c99b468",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Planets/A0A39088-19BC-4E05-B413-F8626DE92059.png",
+    "width": 415,
+    "height": 427,
+    "guid": "21884a3db15ac4b848a793456fbb1213",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 2.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/AEB41A81-3668-4058-B581-CD69F75B8095.png",
+    "width": 529,
+    "height": 522,
+    "guid": "a62fe587d32f84ba59d5c10d1304a797",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 1.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/BF920958-5C41-4115-B0B8-6036A7815F6C.png",
+    "width": 619,
+    "height": 631,
+    "guid": "3b9fd2a8770d64a00a9c058a925238cc",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 3.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/broken ship.png",
+    "width": 2048,
+    "height": 1026,
+    "guid": "adaa950ad5d0b4b109adee4b7021ce0d",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Planets/C4B29CDA-F8E1-4382-BBAA-DD5DC1F17D08.png",
+    "width": 498,
+    "height": 503,
+    "guid": "db22325ac677640d39ea4cdb8f8258dd",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 4.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/5CC501A5-A7D7-4BCD-8A9B-8CE679E22A02.png",
+    "width": 586,
+    "height": 578,
+    "guid": "c75d3b1e701e04e4a85e57df9046aab8",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/BrokenShip.png",
+    "width": 2048,
+    "height": 1026,
+    "guid": "29dc500916d9a4f4ebb8e4d6f9d3daed",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/CutScene2.unity",
+      "Assets/Scenes/CutScene/WaveTransition.unity",
+      "Assets/Scenes/CutScene/CutScene3.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/CleanShot 2024-11-27 at 21.26.57@2x.png",
+    "width": 1508,
+    "height": 824,
+    "guid": "bc0688dd54dfe41eea1012844e8e9726",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/CutScene/CutScene.unity",
+      "Assets/Scenes/CutScene/CutScene2.unity",
+      "Assets/Scenes/CutScene/CutScene1.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/756DD1BC-05C0-42EE-B56C-D2A8CFD774B4.png",
+    "width": 480,
+    "height": 473,
+    "guid": "fa26d5e49d527446fa2eeb9880b5fd61",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 7.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/274-2743885_cartoon-planet-png-planet-transparent-cartoon-clipart.png",
+    "width": 590,
+    "height": 588,
+    "guid": "e74cb3731919e427281b840240478fa1",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 8.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/Star.png",
+    "width": 256,
+    "height": 256,
+    "guid": "ebc3435ff864a42139622e3c1caa1324",
+    "ppu": 256,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Star.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/31B196D0-A3A0-4A47-A5A1-479598764493.png",
+    "width": 800,
+    "height": 800,
+    "guid": "6d899ef5421a14d85948897c6cb0e871",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 6.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Planets/E91559DA-1023-4CC8-A63C-40D0BC895CDE.png",
+    "width": 452,
+    "height": 471,
+    "guid": "ce7d88cafe6d844269721da0767c233b",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Planets/Planet1 5.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/IceCream.png",
+    "width": 998,
+    "height": 844,
+    "guid": "79801ffbab615424abf56e0efe9ab25f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Resources/Prefabs/IceCream.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/skySprite.jpg",
+    "width": 735,
+    "height": 414,
+    "guid": "f0b7e23cba728c144aa5185d15e0fe18",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/SaladGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/pieOven.jpg",
+    "width": 470,
+    "height": 368,
+    "guid": "e5063472c4dac444f9e83b4da00f06bb",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/OvenStart.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/cheese-burger-cartoon-vector Background Removed.png",
+    "width": 256,
+    "height": 256,
+    "guid": "70435436b342a4981bf82de5357ab4a1",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Prefabs/Food.prefab",
+      "Assets/Resources/Prefabs/Food.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-12-16 115435.png",
+    "width": 612,
+    "height": 585,
+    "guid": "4cf71a01c384b864e9877bb1c34fe4b3",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/salad-2d-cartoon-vector-illustration-on-white-background-h-free-photo Background Removed.png",
+    "width": 1960,
+    "height": 1960,
+    "guid": "557657cf9f3884407901e3fe37cc79e8",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Knife.png",
+    "width": 256,
+    "height": 256,
+    "guid": "481915e9dfc524adc9e3846d6a3487a7",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/SaladGame.unity",
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-11-13 020935.png",
+    "width": 912,
+    "height": 609,
+    "guid": "b4b54b85e4fc75743ad40d5a62960c54",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/LasangaEyes Background Removed.png",
+    "width": 1082,
+    "height": 820,
+    "guid": "428b915b7739248a89c0e0ad431366e4",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Resources/Prefabs/Lasagna.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Cabbage.png",
+    "width": 260,
+    "height": 280,
+    "guid": "863f6c2322ffc4d7ab7fee0f06478286",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/plate.png",
+    "width": 960,
+    "height": 340,
+    "guid": "2c6d96be1eeb73e4eb7a960f84ef93a3",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/LCProject.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Enemy2.png",
+    "width": 256,
+    "height": 256,
+    "guid": "36f15ed68fad74a8993516c6be0269f4",
+    "ppu": 256,
+    "spriteMode": 2,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Bok Choy.png",
+    "width": 260,
+    "height": 280,
+    "guid": "bf04a8b618e334abc8e82ca484f9610d",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/stars.png",
+    "width": 1423,
+    "height": 241,
+    "guid": "2bd46c34408408746ad669710e10bfaa",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/open circle.png",
+    "width": 800,
+    "height": 600,
+    "guid": "33ef717f0bbc31a4abdd34f0fcd8aec6",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-12-14 131929.png",
+    "width": 134,
+    "height": 21,
+    "guid": "aefc1c3896e7697449e76b24a3843885",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/greenBoard.png",
+    "width": 360,
+    "height": 360,
+    "guid": "710d73ddaf799c54a8a8ec9f0f7d9086",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/KitchenPrep.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Table.png",
+    "width": 1200,
+    "height": 980,
+    "guid": "37265b88796c34632a300fdfbe8ec117",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Table.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Salsa.png",
+    "width": 859,
+    "height": 585,
+    "guid": "790090e58afca4618b9a71e0ac94c94f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Resources/Prefabs/Salsa.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/blackBackground.jpg",
+    "width": 2480,
+    "height": 3508,
+    "guid": "5ed418f8261ff3144b488e9d386b3ad8",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/LCProject.unity",
+      "Assets/Scenes/EndPrepTime.unity",
+      "Assets/Scenes/MainMenu.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Oven.jpg",
+    "width": 612,
+    "height": 459,
+    "guid": "aeadb9e8871a2bf438709ae4ec0d7be2",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/OvenMinigame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/darkBoard.png",
+    "width": 3218,
+    "height": 6416,
+    "guid": "d4d5522fb3ef0b64cb009c7b9f9d1f45",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/LCProject.unity",
+      "Assets/Scenes/LasagnaMiniGame.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Screenshot 2024-12-14 131916.png",
+    "width": 148,
+    "height": 27,
+    "guid": "0ad0e363b5fd44149a63429b45dd571a",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/fork.png",
+    "width": 450,
+    "height": 405,
+    "guid": "79b2612e3e9bb4093bd3215d3e980ba0",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/cabbage 1.png",
+    "width": 1000,
+    "height": 993,
+    "guid": "36331f33786384f1ab79cbad10c294fd",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Cabbage.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/PieBG.png",
+    "width": 500,
+    "height": 500,
+    "guid": "4ea6ff72be5fe4fd5b29ce67c6adddc0",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Pie.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Pie.png",
+    "width": 500,
+    "height": 500,
+    "guid": "f7c46024ac0486c47bff6f3288e5a27f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/OvenMinigame.unity",
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/cutting.png",
+    "width": 1036,
+    "height": 980,
+    "guid": "1ec60d0d0d55b25488d6f3927803c4f9",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": []
+  },
+  {
+    "path": "Assets/Sprites/CleanShot 2024-10-24 at 23.16.42@2x.png",
+    "width": 2512,
+    "height": 1410,
+    "guid": "fb8f4ea3e8c534182a4deab1f653d712",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Scenes/GameSelector.unity",
+      "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+      "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+      "Assets/Scenes/Tutorials/Tutorial.unity",
+      "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+      "Assets/Scenes/BattleGrounds/WaveScreen.unity",
+      "Assets/Scenes/BattleGrounds/Kitchen.unity",
+      "Assets/Scenes/GameOver.unity",
+      "Assets/Scenes/CutScene/WaveTransition.unity",
+      "Assets/Scenes/CutScene/CutScene3.unity"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/cbg p2.png",
+    "width": 468,
+    "height": 905,
+    "guid": "1cef691bb962d423a9ab7282b90df065",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/LeftCabage.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/cbg p1.png",
+    "width": 559,
+    "height": 941,
+    "guid": "786eb3e4433764f12bd66cfba99bb2b7",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/RightCabage.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/tomato 2.png",
+    "width": 183,
+    "height": 371,
+    "guid": "e9b3eae5aea58459ab6a43df51361f1f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/RightTomato.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/brussel sprouts 1.png",
+    "width": 277,
+    "height": 605,
+    "guid": "80f334a61d34241a2bb4a08eb94b204b",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/LeftBrussel.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/Tomato 1.png",
+    "width": 185,
+    "height": 364,
+    "guid": "ce0567b8bc89a4a78a42c2612d87265e",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/LeftTomato.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/brussel sprouts 2.png",
+    "width": 279,
+    "height": 600,
+    "guid": "83fc63136d3aa44ce905d96a9502a05d",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/RightBrussel.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/bochchoy p1.png",
+    "width": 499,
+    "height": 432,
+    "guid": "3530285920a0f4cf886a88ac26337df4",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/RightBoch.prefab"
+    ]
+  },
+  {
+    "path": "Assets/Sprites/Veggies that have been chopped/bochchoy p2.png",
+    "width": 589,
+    "height": 717,
+    "guid": "ee37316a4b5c545e7a35a53d1efb971f",
+    "ppu": 100,
+    "spriteMode": 1,
+    "max": 2048,
+    "refs": [
+      "Assets/Resources/Prefabs/Salad/Chopped/LeftBoch.prefab"
+    ]
+  }
+]
