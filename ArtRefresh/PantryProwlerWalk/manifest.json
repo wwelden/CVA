@@ -1,0 +1,202 @@
+{
+  "name": "Pantry Prowler walk",
+  "fps": 8,
+  "frames": 6,
+  "durationSeconds": 0.75,
+  "atlas": {
+    "width": 2700,
+    "height": 1320,
+    "cellWidth": 900,
+    "cellHeight": 660,
+    "pixelsPerUnit": 100,
+    "order": "left to right, top row then bottom row"
+  },
+  "ids": {
+    "atlas": "fce5790b3a02083846ef2f3d7f0e9b94",
+    "walk": "448a9327e1618b8944ec9763fd720a5e",
+    "idle": "7bacd2ffc4aef5b708d09338c6b4ff9d",
+    "controller": "9ba2dd3e0a26e3060814830a16681d13",
+    "script": "bb07dd10d87aa698fc9f738ce69f43a4"
+  },
+  "records": [
+    {
+      "frame": 1,
+      "scale": 1.1793103448275861,
+      "body": {
+        "body": {
+          "x0": 283,
+          "x1": 626,
+          "y0": 223,
+          "y1": 497,
+          "width": 344,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 208,
+          "x1": 685,
+          "y0": 145,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 84,
+        "y": 117
+      },
+      "fileID": 21300010,
+      "name": "PantryProwlerWalk_0"
+    },
+    {
+      "frame": 2,
+      "scale": 1.1476510067114094,
+      "body": {
+        "body": {
+          "x0": 285,
+          "x1": 625,
+          "y0": 226,
+          "y1": 500,
+          "width": 341,
+          "cx": 455
+        },
+        "alpha": {
+          "x0": 193,
+          "x1": 680,
+          "y0": 150,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 87,
+        "y": 101
+      },
+      "fileID": 21300011,
+      "name": "PantryProwlerWalk_1"
+    },
+    {
+      "frame": 3,
+      "scale": 1.1476510067114094,
+      "body": {
+        "body": {
+          "x0": 285,
+          "x1": 625,
+          "y0": 221,
+          "y1": 495,
+          "width": 341,
+          "cx": 455
+        },
+        "alpha": {
+          "x0": 211,
+          "x1": 673,
+          "y0": 146,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 90,
+        "y": 116
+      },
+      "fileID": 21300012,
+      "name": "PantryProwlerWalk_2"
+    },
+    {
+      "frame": 4,
+      "scale": 1.159322033898305,
+      "body": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 223,
+          "y1": 497,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 211,
+          "x1": 680,
+          "y0": 146,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 89,
+        "y": 118
+      },
+      "fileID": 21300013,
+      "name": "PantryProwlerWalk_3"
+    },
+    {
+      "frame": 5,
+      "scale": 1.1067961165048543,
+      "body": {
+        "body": {
+          "x0": 285,
+          "x1": 625,
+          "y0": 226,
+          "y1": 500,
+          "width": 341,
+          "cx": 455
+        },
+        "alpha": {
+          "x0": 199,
+          "x1": 674,
+          "y0": 150,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 101,
+        "y": 101
+      },
+      "fileID": 21300014,
+      "name": "PantryProwlerWalk_4"
+    },
+    {
+      "frame": 6,
+      "scale": 1.1515151515151516,
+      "body": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 221,
+          "y1": 495,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 210,
+          "x1": 674,
+          "y0": 146,
+          "y1": 543
+        }
+      },
+      "placement": {
+        "x": 88,
+        "y": 116
+      },
+      "fileID": 21300015,
+      "name": "PantryProwlerWalk_5"
+    }
+  ],
+  "reference": {
+    "body": {
+      "x0": 284,
+      "x1": 625,
+      "y0": 223,
+      "y1": 497,
+      "width": 342,
+      "cx": 454.5
+    },
+    "alpha": {
+      "x0": 217,
+      "x1": 674,
+      "y0": 150,
+      "y1": 543
+    }
+  },
+  "generation": "Built-in imagegen, identity-preserving six-pose sheet; deterministic body-width registration, baseline alignment and atlas packing with Sharp.",
+  "unity": "2022.3.43f1",
+  "limitations": [
+    "Blocked before asset import: Unity Package Manager process failed to launch and Editor aborted with SIGABRT.",
+    "Full gameplay playtest pending."
+  ],
+  "normalization": "Torso width/height registered to idle; upper body and stepping foot region scaled separately to keep a fixed planted baseline. Bob offsets 0,3,-2,0,3,-2 pixels."
+}
