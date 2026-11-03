@@ -1,0 +1,464 @@
+{
+  "generatedAssetCount": 40,
+  "uiSpriteCount": 2,
+  "sceneCount": 8,
+  "assets": [
+    {
+      "key": "tabletop",
+      "dimensions": [
+        1440,
+        960
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "lasagna",
+      "dimensions": [
+        1648,
+        1112
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "pie-oven",
+      "dimensions": [
+        1410,
+        1104
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "brick-oven",
+      "dimensions": [
+        1224,
+        918
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "kitchen",
+      "dimensions": [
+        1036,
+        1022
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "veggie-board",
+      "dimensions": [
+        1400,
+        1094
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "lasagna-example",
+      "dimensions": [
+        1092,
+        1295
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "cookbook",
+      "dimensions": [
+        1800,
+        1200
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "pie",
+      "dimensions": [
+        1224,
+        1170
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "prep-kitchen",
+      "dimensions": [
+        2336,
+        1242
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "chop-kitchen",
+      "dimensions": [
+        2614,
+        1960
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "menu-sheet",
+      "dimensions": [
+        1545,
+        2000
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "lasagna-rules-board",
+      "dimensions": [
+        1598,
+        1054
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "pie-sprite",
+      "dimensions": [
+        1500,
+        1500
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "chef-life",
+      "dimensions": [
+        1080,
+        1155
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "thermometer",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "knife",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "decor-knife",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "plate",
+      "dimensions": [
+        1920,
+        680
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "pasta",
+      "dimensions": [
+        1780,
+        428
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "cheese",
+      "dimensions": [
+        2052,
+        780
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "sauce",
+      "dimensions": [
+        1448,
+        560
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "chalkboard",
+      "dimensions": [
+        1240,
+        1754
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true
+    },
+    {
+      "key": "timer-board",
+      "dimensions": [
+        1609,
+        3208
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "prep-sign",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "game-title",
+      "dimensions": [
+        2480,
+        572
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "alien",
+      "dimensions": [
+        1800,
+        1320
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "chef-atlas",
+      "dimensions": [
+        1600,
+        1344
+      ],
+      "guidPreserved": true,
+      "normalizedVisibleHeight": 0.53,
+      "alpha": true
+    },
+    {
+      "key": "cabbage",
+      "dimensions": [
+        2000,
+        1986
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "bok-choy",
+      "dimensions": [
+        1224,
+        1224
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "brussels-sprout",
+      "dimensions": [
+        1960,
+        1960
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "tomato",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "cabbage-left",
+      "dimensions": [
+        1118,
+        1882
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "cabbage-right",
+      "dimensions": [
+        936,
+        1810
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "bok-choy-left",
+      "dimensions": [
+        1497,
+        1296
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "bok-choy-right",
+      "dimensions": [
+        1178,
+        1434
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "brussels-left",
+      "dimensions": [
+        831,
+        1815
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "brussels-right",
+      "dimensions": [
+        837,
+        1800
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "tomato-left",
+      "dimensions": [
+        740,
+        1456
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    },
+    {
+      "key": "tomato-right",
+      "dimensions": [
+        732,
+        1484
+      ],
+      "guidPreserved": true,
+      "worldBoundsPreserved": true,
+      "alpha": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene": "KitchenPrep",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 12,
+      "gameplayComponentsUnchanged": 10,
+      "buttonCallbacksPreserved": 1,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "OvenStart",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 0,
+      "gameplayComponentsUnchanged": 7,
+      "buttonCallbacksPreserved": 2,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "OvenMinigame",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 8,
+      "gameplayComponentsUnchanged": 10,
+      "buttonCallbacksPreserved": 1,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "VeggieStart",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 0,
+      "gameplayComponentsUnchanged": 7,
+      "buttonCallbacksPreserved": 2,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "SaladGame",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 2,
+      "gameplayComponentsUnchanged": 14,
+      "buttonCallbacksPreserved": 0,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "LasagnaStartGame",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 0,
+      "gameplayComponentsUnchanged": 9,
+      "buttonCallbacksPreserved": 2,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "LasagnaMiniGame",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 2,
+      "gameplayComponentsUnchanged": 10,
+      "buttonCallbacksPreserved": 0,
+      "newDanglingReferences": 0
+    },
+    {
+      "scene": "MainMenu",
+      "physicsAndWorldTransformsPreserved": true,
+      "physicsComponents": 0,
+      "gameplayComponentsUnchanged": 7,
+      "buttonCallbacksPreserved": 6,
+      "newDanglingReferences": 0
+    }
+  ],
+  "animationKeyframesUnchanged": true,
+  "chefSliceIdentitiesPreserved": 55,
+  "scriptChanges": "Two lives-counter text-format expressions only.",
+  "unityPlayTest": "Pending: Unity Editor not available in this environment.",
+  "previewType": "Scene-data layout reconstructions with approximate font rendering; dynamic gameplay is not simulated."
+}

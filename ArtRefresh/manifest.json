@@ -157,7 +157,7 @@
       ],
       "generated": [
         1152,
-        1365
+        1366
       ],
       "replacement": [
         1092,
@@ -171,7 +171,8 @@
         "Assets/Scenes/LasagnaStartGame.unity",
         "Assets/Scenes/LasagnaMiniGame.unity"
       ],
-      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Portrait 156:185. Lasagna ingredient stack example diagram: three golden wavy pasta sheets arranged vertically at y12%,40%,65%; pale cream shredded cheese and bright red sauce BETWEEN sheets. Blue-violet round plate at y88%, muted brown kitchen cabinet background with horizontal wooden strips. Preserve clear ingredient order and layout, bold readable shapes."
+      "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Portrait 156:185. Lasagna ingredient stack example diagram: three golden wavy pasta sheets arranged vertically at y12%,40%,65%; pale cream shredded cheese and bright red sauce BETWEEN sheets. Blue-violet round plate at y88%, muted brown kitchen cabinet background with horizontal wooden strips. Preserve clear ingredient order and layout, bold readable shapes.",
+      "refinementPrompt": "Use case: precise-object-edit. Edit this finished cartoon lasagna stack diagram. Change ONLY the three large wavy pasta sheets from yellow-green to appetizing warm GOLDEN YELLOW / amber pasta. They must read as cooked lasagna noodles, not green vegetables. Keep the exact sheet shapes, dark outlines, shading and highlights, ingredient order, cheese strands, red sauce, blue plate, background, composition and portrait aspect unchanged. No new objects, no lettering. Keep it crisp, high-resolution and in the same friendly 2D cartoon style."
     },
     {
       "key": "cookbook",
@@ -220,6 +221,2336 @@
         "Assets/Scenes/MainMenu.unity"
       ],
       "prompt": "Use case: style-transfer. Asset type: high resolution Unity game replacement artwork. Image 1 is the EDIT TARGET: preserve its subject, layout and camera angle. Image 2, salad character with eyes, is STYLE REFERENCE ONLY. Redraw image 1 in precisely that cohesive friendly cartoon style: bold dark ink outer contours, tapered inner linework, bright saturated colors, rounded chunky shapes, clean two or three tone cel shading, small crisp light highlights like the salad leaves and wooden bowl. Keep source aspect ratio. Request largest high-resolution raster output possible. This is a finished game asset filling the canvas, not a presentation or collage. Do not copy salad bowl or add eyes/faces to objects that did not have them. No photorealism, photographic grain, painterly textures, 3D rendering, text, labels, borders, signature or watermark. Nearly square 612:585. Top-down round caramel cream dessert pie on rustic beige round ceramic plate, nearly fills frame. Cream and caramel swirled surface, circular ring of piped cream rosettes with caramel drizzle, thin golden crust; dark warm brown horizontal wood planks behind, tiny fork sliver at right edge. Preserve original composition. Cartoon cream and crust with bold clean outlines and cel-shaded highlights."
+    },
+    {
+      "key": "prep-kitchen",
+      "path": "Assets/Sprites/Screenshot 2024-11-13 165951.png",
+      "original": [
+        1168,
+        621
+      ],
+      "generated": [
+        1720,
+        914
+      ],
+      "replacement": [
+        2336,
+        1242
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 4096,
+      "guid": "802a2a23f1e341b459c2b44497e80889",
+      "refs": [
+        "Assets/Scenes/KitchenPrep.unity"
+      ],
+      "alpha": false,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Redraw this isometric kitchen interior at original wide 1168:621 aspect. Keep every countertop, appliance, island, table and chair in EXACTLY the original position and size, and retain the same checkerboard floor perspective. Left red double doors, pale blue refrigerator upper-left, sink/cabinets along back, black stove and pale hood upper-middle-right, toaster counter and tall cupboard right, center island with salad and chopping board at x54% y61%, long dining table and red chairs lower-left at x39% y80%, small square table with red stools lower-right x77% y78%. Preserve a clear walkable floor and existing collision geometry. Replace upper-left 'Kitchen Kit' banner and bottom-left logo with plain wall/floor, no writing or badge. Keep scene self-contained to edges. High resolution smooth cartoon contours matching salad style, same muted lilac walls, brown cabinets, black/cream tile."
+    },
+    {
+      "key": "chop-kitchen",
+      "path": "Assets/Sprites/kitchen-interior-flat-style-with-range-hood-and-cooker-flat-kitchen-interior-with-cooking-tools-vector-1.jpg",
+      "original": [
+        1307,
+        980
+      ],
+      "generated": [
+        1449,
+        1085
+      ],
+      "replacement": [
+        2614,
+        1960
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 4096,
+      "guid": "8bbb05bef071f415980631c6460a319a",
+      "refs": [
+        "Assets/Scenes/SaladGame.unity"
+      ],
+      "alpha": false,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Redraw front-facing kitchen background, exact 1307:980 aspect: pale mint wall, four wood shelves with cream pots, dishes and jars near top; centered dark navy range hood; hanging cooking utensils left, central pot on stove, chopping boards and microwave right; horizontal wooden counter at y51%, cream cabinets below, navy oven centered at y56-80%, dark blue floor bottom20%. Preserve exact geometry, palette and room layout. Smooth bold outlined cartoon rendering, with gently simplified background details; keep lower half unobstructed for falling vegetables and knife. No labels or text."
+    },
+    {
+      "key": "menu-sheet",
+      "path": "Assets/Sprites/Brown Traditional Indonesian Food Menu Flyer (4).png",
+      "original": [
+        1545,
+        2000
+      ],
+      "generated": [
+        1102,
+        1427
+      ],
+      "replacement": [
+        1545,
+        2000
+      ],
+      "scale": 1,
+      "ppu": 100,
+      "maxTextureSize": 2048,
+      "guid": "0e96c256f69163d4e8c55a826882cc2b",
+      "refs": [
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "alpha": false,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Redesign portrait menu sheet, same 1545:2000 aspect. Cream paper with a dark warm-brown hand-inked outer rim and simple golden corner flourishes. Left vertical food illustration strip occupies x9%-27%, y6%-92%, showing three cartoon food closeups stacked: leafy salad, lasagna, golden pie, using same illustrated food style as reference. Right area x32%-95%, y14%-94% must be completely blank pale cream, generous empty room for four existing menu button overlays. At upper-right x35%-95%, y5%-12%, put only this exact heading: \"LUIGI'S MENU\" in chunky friendly dark outlined letters. REMOVE ALL other original filler food names, prices, captions, footer addresses, reservation details, and background photographs. No other text, no buttons drawn into image."
+    },
+    {
+      "key": "lasagna-rules-board",
+      "path": "Assets/Sprites/Screenshot 2024-12-14 115728.png",
+      "original": [
+        799,
+        527
+      ],
+      "generated": [
+        1544,
+        1018
+      ],
+      "replacement": [
+        1598,
+        1054
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "d452d794ae348de44b66bef4e28f9cc2",
+      "refs": [
+        "Assets/Scenes/LasagnaStartGame.unity"
+      ],
+      "alpha": false,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Replace the original text poster with a BLANK illustrated instruction board in matching cartoon style, same landscape 799:527 aspect. Broad cream parchment/chopping board panel with golden wood frame and thick dark outlined rounded corners. Small tomato and basil decoration confined to top-left and top-right 10% corners; tiny pasta/cheese motifs at bottom corners. Center from x8%-92%, y8%-90% entirely empty pale cream for live Unity title, rules and existing example image. No text, no letters, no labels, no PLAY footer, no drawn buttons, no inset panels."
+    },
+    {
+      "key": "pie-sprite",
+      "path": "Assets/Sprites/Pie.png",
+      "original": [
+        500,
+        500
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1500,
+        1500
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "f7c46024ac0486c47bff6f3288e5a27f",
+      "refs": [
+        "Assets/Scenes/OvenMinigame.unity",
+        "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+        "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+        "Assets/Scenes/Tutorials/Tutorial.unity",
+        "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+        "Assets/Scenes/BattleGrounds/Kitchen.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 33,
+          "top": 122,
+          "width": 1188,
+          "height": 1010,
+          "clearRatio": 0.6386268883750627
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 50,
+          "width": 500,
+          "height": 402,
+          "clearRatio": 0.656404
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent single game sprite, square canvas. Redraw the same domed golden baked pie in pale silver fluted pan, three small red teardrop steam holes, three curling pale steam wisps above. Retain original centered silhouette: steam occupies y10%-42%, pie body y45%-90%, pan base y88%; no padding change and no new face/eyes. Bold dark outlines and appetizing golden cel shading like salad's wooden bowl. No plate, background, text or separate props."
+    },
+    {
+      "key": "chef-life",
+      "path": "Assets/Sprites/PieMan.png",
+      "original": [
+        360,
+        385
+      ],
+      "generated": [
+        1213,
+        1296
+      ],
+      "replacement": [
+        1080,
+        1155
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "70f998295683cf84db822ea4c4868521",
+      "refs": [
+        "Assets/Scenes/OvenMinigame.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 143,
+          "top": 18,
+          "width": 955,
+          "height": 1241,
+          "clearRatio": 0.5309246282556258
+        },
+        "originalAlpha": {
+          "left": 74,
+          "top": 16,
+          "width": 252,
+          "height": 335,
+          "clearRatio": 0.5462409812409812
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent game life icon, portrait 360:385. Original generic smiling male chef bust in tall white toque, cream double-breasted jacket, brown moustache, right hand making an OK cooking gesture, friendly round face. Redraw as an original simple bold outlined cartoon with sage-green neckerchief, round highlights and same form language as salad character. Keep bust centered and full visible, large white hat top, arm at left, curved bottom outline. No celebrity or named character likeness, no photoreal face, no text, no solid medallion background."
+    },
+    {
+      "key": "thermometer",
+      "path": "Assets/Sprites/TempTicker.png",
+      "original": [
+        360,
+        360
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1080,
+        1080
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "fb28eaaf8ba639d419899e85e750e7db",
+      "refs": [
+        "Assets/Scenes/OvenMinigame.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 543,
+          "top": 29,
+          "width": 162,
+          "height": 1196,
+          "clearRatio": 0.921420831330174
+        },
+        "originalAlpha": {
+          "left": 163,
+          "top": 9,
+          "width": 35,
+          "height": 343,
+          "clearRatio": 0.942445987654321
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent game thermometer sprite, square canvas. Preserve exact original slender vertical silhouette occupying center x45%-55%, y3%-96%. Tall white glass thermometer, dark brown bold outline, red mercury column lower two thirds, round red bulb near bottom, a few short dark tick marks, tiny gleam. Same friendly outlined cartoon shading as reference. No numerals, no faces, no other objects. Preserve very large transparent side margins so existing world-space location and width align."
+    },
+    {
+      "key": "knife",
+      "path": "Assets/Sprites/Knife.png",
+      "original": [
+        256,
+        256
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1024,
+        1024
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 1024,
+      "guid": "481915e9dfc524adc9e3846d6a3487a7",
+      "refs": [
+        "Assets/Scenes/SaladGame.unity",
+        "Assets/Scenes/Tutorials/PancakeTutorial.unity",
+        "Assets/Scenes/Tutorials/SalsaTutorial.unity",
+        "Assets/Scenes/Tutorials/Tutorial.unity",
+        "Assets/Scenes/Tutorials/IceCreamTutorial.unity",
+        "Assets/Scenes/BattleGrounds/Kitchen.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 412,
+          "top": 8,
+          "width": 430,
+          "height": 1227,
+          "clearRatio": 0.7716557414996096
+        },
+        "originalAlpha": {
+          "left": 85,
+          "top": 0,
+          "width": 86,
+          "height": 256,
+          "clearRatio": 0.781280517578125
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent square game knife sprite. Preserve upright knife tip up with silver broad curved blade at x38%-62% y0%-59%, red-brown wooden handle from y59%-100%, three metal rivets, full knife centered horizontally. Same rounded friendly blade silhouette, blade edge right, cutting edge left straight. Bold dark outline, simple blue-gray cel shading and small white highlight. No face, no hand, no background, no second knife. Match original occupied canvas bounds."
+    },
+    {
+      "key": "decor-knife",
+      "path": "Assets/Sprites/knifeBackground.png",
+      "original": [
+        1024,
+        1024
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        2048,
+        2048
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "b58bca21bea98b74aa6542a57bda7cff",
+      "refs": [
+        "Assets/Scenes/VeggieStart.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 12,
+          "top": 40,
+          "width": 1233,
+          "height": 1192,
+          "clearRatio": 0.7977820257472737
+        },
+        "originalAlpha": {
+          "left": 17,
+          "top": 44,
+          "width": 997,
+          "height": 942,
+          "clearRatio": 0.824193000793457
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent square menu decoration knife. Preserve exact diagonal orientation and full bounds: brown handle begins lower-left x3%y96%, broad silver chef blade pointing upper-right x98%y3%, blade shoulder around center. Redraw smooth bold ink contours and clean two-tone silver-blue cel shading, wooden handle with three pale rivets. Match style and handle palette of game knife, no photo texture. No face, text, hand, second knife, background or drop shadow outside silhouette."
+    },
+    {
+      "key": "plate",
+      "path": "Assets/Sprites/plate.png",
+      "original": [
+        960,
+        340
+      ],
+      "generated": [
+        2109,
+        745
+      ],
+      "replacement": [
+        1920,
+        680
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "2c6d96be1eeb73e4eb7a960f84ef93a3",
+      "refs": [
+        "Assets/LCProject.unity",
+        "Assets/Scenes/LasagnaMiniGame.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 1,
+          "top": 8,
+          "width": 2106,
+          "height": 727,
+          "clearRatio": 0.21719444630076915
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 0,
+          "width": 960,
+          "height": 340,
+          "clearRatio": 0.12316176470588236
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent extra-wide oval game plate, exact wide 960:340 aspect. Same centered shallow white/cream ceramic plate viewed slightly from above, horizontal oval nearly fills canvas, subtle pale gray-blue double rim and gently shaded lower edge, dark warm outline. Keep original outer silhouette and width-height ratio so falling food still lands correctly. Clean cartoon cel shading matching salad bowl; no food, face, utensils, table or background."
+    },
+    {
+      "key": "pasta",
+      "path": "Assets/Sprites/Screenshot_2024-11-04_12.55.45_PM-removebg-preview.png",
+      "original": [
+        445,
+        107
+      ],
+      "generated": [
+        2172,
+        724
+      ],
+      "replacement": [
+        1780,
+        428
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 2048,
+      "guid": "c3a843ff0d612784e96002b3482ecc64",
+      "refs": [
+        "Assets/Resources/Prefabs/Pasta.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 75,
+          "top": 221,
+          "width": 2022,
+          "height": 261,
+          "clearRatio": 0.7651278705371224
+        },
+        "originalAlpha": {
+          "left": 17,
+          "top": 34,
+          "width": 415,
+          "height": 53,
+          "clearRatio": 0.6847842066575659
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent wide horizontal single lasagna pasta sheet, exact 445:107 aspect. Preserve original long wavy noodle silhouette and occupied canvas bounds: one golden yellow ribbon-like pasta layer spanning x4%-97%, centered vertically, softly scalloped top and bottom edges. Rich golden yellow, NOT green, with dark warm outline, one simple highlight and broad darker underside. No sauce, cheese, plate, face or background."
+    },
+    {
+      "key": "cheese",
+      "path": "Assets/Sprites/Cheese Sprite (Real).png",
+      "original": [
+        513,
+        195
+      ],
+      "generated": [
+        2032,
+        774
+      ],
+      "replacement": [
+        2052,
+        780
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 4096,
+      "guid": "94af039beb5a89c4b9e5be5a12f546f0",
+      "refs": [
+        "Assets/Resources/Prefabs/Cheese.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 72,
+          "top": 104,
+          "width": 1888,
+          "height": 566,
+          "clearRatio": 0.5553896060957496
+        },
+        "originalAlpha": {
+          "left": 25,
+          "top": 36,
+          "width": 471,
+          "height": 135,
+          "clearRatio": 0.59930024491428
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent wide horizontal shredded cheese ingredient sprite, exact 513:195 aspect. Small overlapping loose curly ribbons and strands of pale golden cream cheese, forming one low broad heap centered in frame, original silhouette spanning nearly width with generous top/bottom margins. Bold warm dark outlines, simple cartoon cel shading and light highlights. Distinct strands but restrained detail readable at game scale. No pasta, sauce, plate, face or background."
+    },
+    {
+      "key": "sauce",
+      "path": "Assets/Sprites/Red Sauce.png",
+      "original": [
+        362,
+        140
+      ],
+      "generated": [
+        2017,
+        780
+      ],
+      "replacement": [
+        1448,
+        560
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 2048,
+      "guid": "c3c6160d297bf4446beb183cd21e7304",
+      "refs": [
+        "Assets/Resources/Prefabs/Sauce.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 52,
+          "top": 107,
+          "width": 1902,
+          "height": 524,
+          "clearRatio": 0.5572441935852942
+        },
+        "originalAlpha": {
+          "left": 10,
+          "top": 22,
+          "width": 336,
+          "height": 88,
+          "clearRatio": 0.5953827940015786
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent wide horizontal tomato sauce ingredient sprite, exact 362:140 aspect. Preserve original broad low irregular mound of red tomato sauce spanning x3%-96%, y15%-79%, slightly raised at center, rounded lobed edge. Vivid tomato red, dark brown outline, a few broad brighter red highlights and darker red underside, smooth cartoon style. No bowl, pasta, cheese, face or background."
+    },
+    {
+      "key": "chalkboard",
+      "path": "Assets/Sprites/blackBackground.jpg",
+      "original": [
+        2480,
+        3508
+      ],
+      "generated": [
+        1054,
+        1492
+      ],
+      "replacement": [
+        1240,
+        1754
+      ],
+      "scale": 0.5,
+      "ppu": 50,
+      "maxTextureSize": 2048,
+      "guid": "5ed418f8261ff3144b488e9d386b3ad8",
+      "refs": [
+        "Assets/LCProject.unity",
+        "Assets/Scenes/EndPrepTime.unity",
+        "Assets/Scenes/MainMenu.unity",
+        "Assets/Scenes/LasagnaMiniGame.unity"
+      ],
+      "alpha": false,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Portrait instruction sidebar background, original 2480:3508 aspect. Simplify into a warm very dark forest-green chalkboard with golden wooden frame and bold dark contours. Keep center at least 80% broad quiet dark green, with extremely subtle sparse line-art cooking doodles only around outer edges; no busy pattern behind text. No writing, words, logos, food facts or captions. Flat clean cartoon style matching reference; high contrast space for existing cream/white rules."
+    },
+    {
+      "key": "timer-board",
+      "path": "Assets/Sprites/darkBoard.png",
+      "original": [
+        3218,
+        6416
+      ],
+      "generated": [
+        888,
+        1770
+      ],
+      "replacement": [
+        1609,
+        3208
+      ],
+      "scale": 0.5,
+      "ppu": 50,
+      "maxTextureSize": 4096,
+      "guid": "d4d5522fb3ef0b64cb009c7b9f9d1f45",
+      "refs": [
+        "Assets/LCProject.unity",
+        "Assets/Scenes/LasagnaMiniGame.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 32,
+          "top": 32,
+          "width": 823,
+          "height": 1709,
+          "clearRatio": 0.3021472743930371
+        },
+        "originalAlpha": {
+          "left": 183,
+          "top": 214,
+          "width": 2835,
+          "height": 5993,
+          "clearRatio": 0.36922280222377557
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent tall portrait wooden paddle chopping-board sign, exact 3218:6416 aspect. Preserve source silhouette and empty center: narrow rounded handle at top center y3%-20%, rounded broad rectangular wooden paddle body x10%-91%, y20%-97%. Golden honey wood with thick warm brown contour, just a few gentle drawn grain curves at edges, very clear blank golden center for numeric timer. No writing or numbers, no background, no duplicate boards, no stretched photographic wood texture."
+    },
+    {
+      "key": "prep-sign",
+      "path": "Assets/Sprites/greenBoard.png",
+      "original": [
+        360,
+        360
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1080,
+        1080
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "710d73ddaf799c54a8a8ec9f0f7d9086",
+      "refs": [
+        "Assets/Scenes/KitchenPrep.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 14,
+          "top": 211,
+          "width": 1222,
+          "height": 803,
+          "clearRatio": 0.37672049123824497
+        },
+        "originalAlpha": {
+          "left": 7,
+          "top": 62,
+          "width": 346,
+          "height": 236,
+          "clearRatio": 0.3700385802469136
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent square canvas containing a wide dark green chalkboard with warm honey wood border, spanning x2%-98%,y18%-82% exactly as original. Broad completely blank deep green center to support existing game-title overlay, thick rounded wood contour, two-tone shading and small corner highlights. Match salad bowl's outlined cartoon materials. No chalk writing, no letters, no decorations outside frame."
+    },
+    {
+      "key": "game-title",
+      "path": "Assets/Sprites/UldKlQF2.png",
+      "original": [
+        620,
+        143
+      ],
+      "generated": [
+        2172,
+        724
+      ],
+      "replacement": [
+        2480,
+        572
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 4096,
+      "guid": "567069154fcf38641a9f88ea7bc82812",
+      "refs": [
+        "Assets/Scenes/KitchenPrep.unity",
+        "Assets/Scenes/MainMenu.unity"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 12,
+          "top": 163,
+          "width": 2148,
+          "height": 413,
+          "clearRatio": 0.6058715647670503
+        },
+        "originalAlpha": {
+          "left": 10,
+          "top": 38,
+          "width": 579,
+          "height": 92,
+          "clearRatio": 0.7945071057974283
+        }
+      },
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Transparent wide horizontal game title wordmark with original 620:143 aspect, exact text: \"Chefs vs Aliens\". Same playful chunky rounded irregular cartoon letterforms as original, thick dark brown outer contour, cream-golden fill, subtle warm orange lower edge shading; clean high-resolution edges. Keep all letters on one line and nearly fill canvas width with safe margins, including lowercase vs in center. No chef hat or food icons because existing separate chef hats remain in scene. No extra text, background or frame."
+    },
+    {
+      "key": "alien",
+      "path": "Assets/Sprites/Alien3.png",
+      "original": [
+        900,
+        660
+      ],
+      "generated": [
+        1464,
+        1074
+      ],
+      "replacement": [
+        1800,
+        1320
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "24d584c85498649039523011d3c71a0f",
+      "refs": [
+        "Assets/Scenes/CutScene/WaveTransition.unity",
+        "Assets/Resources/Prefabs/Shooter.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 247,
+          "top": 142,
+          "width": 942,
+          "height": 811,
+          "clearRatio": 0.7087499109605072
+        },
+        "originalAlpha": {
+          "left": 217,
+          "top": 90,
+          "width": 458,
+          "height": 515,
+          "clearRatio": 0.8050808080808081
+        }
+      },
+      "prompt": "Use case: stylized-concept. Asset type: original 2D cartoon alien enemy sprite for Chefs vs Aliens. References show ONLY the desired art style, not a character to copy. Invent an original 'Pantry Prowler': a squat rounded teal pear-shaped alien body, two short flexible orange bean-shoot feelers, two enormous asymmetrical purple eyes with pale highlights, tiny sideways mischievous mouth, four short orange suction-cup feet in a sneaking pose, two small orange leaf-shaped side fins. Three-quarter view facing LEFT. Friendly mischievous space-pest personality; simple distinct silhouette and clean bold black/brown contours, two-tone cel shading, bright warm highlights matching salad reference. No chef costume. Landscape 900:660 canvas with subject confined to centered x24%-76%,y12%-93%, keeping transparent outer margins comparable to the previous enemy. Real alpha transparent background. No elongated head, biomechanical ribs, skeletal body, inner jaw, long tail, sharp claws, weapon, black armor, known film creature, logos, text or background. This must be a wholly new character design."
+    },
+    {
+      "key": "chef-atlas",
+      "path": "Assets/Sprites/PlayStation - Xenogears - Aveh Chef.png",
+      "original": [
+        480,
+        384
+      ],
+      "generated": [
+        1145,
+        1374
+      ],
+      "replacement": [
+        1600,
+        1344
+      ],
+      "scale": 8,
+      "ppu": 800,
+      "maxTextureSize": 2048,
+      "guid": "60ae1250c280c0b41827b2581c667b61",
+      "refs": [
+        "Assets/Scenes/KitchenPrep.unity",
+        "Assets/ChefWalkUp.anim",
+        "Assets/ChefWalkDOwn.anim",
+        "Assets/ChefWalkRight.anim",
+        "Assets/Idle.anim"
+      ],
+      "alpha": true,
+      "prompt": "Use case: style-transfer. Create a finished high resolution Unity game asset. Image 1 is the original edit target, image 2 is the salad character art style reference, and image 3 is the user's approved in-game visual style. Use cohesive clean 2D cartoon illustration: bold dark brown/black outer contours, rounded forms, bright food colors, two or three broad cel-shading tones, restrained crisp highlights. Backgrounds should be simpler and less saturated than foreground food characters, consistent with the reference battlefield. Preserve original framing, object positions, silhouette and intended overlay space unless specified. No pixel art, photography, 3D rendering, grain, watermark, signature, logos or unnecessary writing. Create a NEW coherent chef animation sprite sheet rather than tracing the old pixel-art sheet. EXACTLY 15 full-body sprites in a regular 5-COLUMN by 3-ROW grid, all equal cells, no drawn grid. Canvas portrait aspect 5:6; every sprite fits in its cell with at least 10% transparent margin, same scale and feet baseline. Friendly generic chef with tall white toque, cream jacket, sage-green apron, dark teal trousers, brown shoes and little brown moustache. Cartoon outlined cel-shaded style matching salad, large clear face. ROW 1: front-facing, pose0 standing neutral, pose1 left foot forward, pose2 passing, pose3 right foot forward, pose4 opposite passing. ROW 2: same five poses strictly right-facing profile. ROW 3: same five poses strictly back-facing. Smooth readable walking cycle, consistent costume/head/body proportions across all fifteen sprites. No kitchen, labels, letters, numbers, grid lines, props or ground shadows. Real transparent background.",
+      "animationSlices": [
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_0",
+          "fileID": "378749644",
+          "sourceCell": {
+            "row": 2,
+            "col": 0
+          },
+          "originalRect": [
+            13,
+            327,
+            22,
+            48
+          ],
+          "replacementRect": [
+            0,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_1",
+          "fileID": "331959666",
+          "sourceCell": {
+            "row": 2,
+            "col": 1
+          },
+          "originalRect": [
+            62,
+            327,
+            21,
+            47
+          ],
+          "replacementRect": [
+            320,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_2",
+          "fileID": "-27315969",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            111,
+            326,
+            24,
+            50
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_3",
+          "fileID": "-946291935",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            159,
+            326,
+            21,
+            49
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_4",
+          "fileID": "1983860442",
+          "sourceCell": {
+            "row": 1,
+            "col": 4
+          },
+          "originalRect": [
+            210,
+            325,
+            21,
+            50
+          ],
+          "replacementRect": [
+            1280,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_5",
+          "fileID": "-859688305",
+          "sourceCell": {
+            "row": 1,
+            "col": 0
+          },
+          "originalRect": [
+            258,
+            325,
+            22,
+            49
+          ],
+          "replacementRect": [
+            0,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_6",
+          "fileID": "-1281998742",
+          "sourceCell": {
+            "row": 1,
+            "col": 1
+          },
+          "originalRect": [
+            304,
+            324,
+            22,
+            51
+          ],
+          "replacementRect": [
+            320,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_7",
+          "fileID": "-1942397301",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            352,
+            324,
+            21,
+            50
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Idle_2",
+          "fileID": "-456582640",
+          "sourceCell": {
+            "row": 0,
+            "col": 3
+          },
+          "originalRect": [
+            397,
+            325,
+            22,
+            50
+          ],
+          "replacementRect": [
+            960,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Idle_3",
+          "fileID": "-1350380797",
+          "sourceCell": {
+            "row": 0,
+            "col": 4
+          },
+          "originalRect": [
+            445,
+            325,
+            21,
+            49
+          ],
+          "replacementRect": [
+            1280,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_10",
+          "fileID": "1409098505",
+          "sourceCell": {
+            "row": 2,
+            "col": 0
+          },
+          "originalRect": [
+            11,
+            263,
+            26,
+            51
+          ],
+          "replacementRect": [
+            0,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_11",
+          "fileID": "-1046350176",
+          "sourceCell": {
+            "row": 2,
+            "col": 1
+          },
+          "originalRect": [
+            61,
+            262,
+            23,
+            52
+          ],
+          "replacementRect": [
+            320,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_12",
+          "fileID": "-1732842838",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            111,
+            261,
+            18,
+            53
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_13",
+          "fileID": "872332292",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            157,
+            260,
+            23,
+            54
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Idle_1",
+          "fileID": "-1226546960",
+          "sourceCell": {
+            "row": 0,
+            "col": 0
+          },
+          "originalRect": [
+            203,
+            261,
+            26,
+            53
+          ],
+          "replacementRect": [
+            0,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Back_1",
+          "fileID": "-1965737457",
+          "sourceCell": {
+            "row": 2,
+            "col": 0
+          },
+          "originalRect": [
+            252,
+            262,
+            24,
+            52
+          ],
+          "replacementRect": [
+            0,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Back_2",
+          "fileID": "-1979311300",
+          "sourceCell": {
+            "row": 2,
+            "col": 1
+          },
+          "originalRect": [
+            299,
+            261,
+            25,
+            54
+          ],
+          "replacementRect": [
+            320,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Back_3",
+          "fileID": "546693246",
+          "sourceCell": {
+            "row": 2,
+            "col": 2
+          },
+          "originalRect": [
+            346,
+            264,
+            27,
+            51
+          ],
+          "replacementRect": [
+            640,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Back_4",
+          "fileID": "-658308677",
+          "sourceCell": {
+            "row": 2,
+            "col": 3
+          },
+          "originalRect": [
+            395,
+            263,
+            26,
+            52
+          ],
+          "replacementRect": [
+            960,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Back_5",
+          "fileID": "657132806",
+          "sourceCell": {
+            "row": 0,
+            "col": 4
+          },
+          "originalRect": [
+            444,
+            262,
+            24,
+            52
+          ],
+          "replacementRect": [
+            1280,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_20",
+          "fileID": "-816690880",
+          "sourceCell": {
+            "row": 2,
+            "col": 0
+          },
+          "originalRect": [
+            11,
+            197,
+            26,
+            54
+          ],
+          "replacementRect": [
+            0,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_21",
+          "fileID": "1310768614",
+          "sourceCell": {
+            "row": 2,
+            "col": 1
+          },
+          "originalRect": [
+            58,
+            201,
+            27,
+            50
+          ],
+          "replacementRect": [
+            320,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_22",
+          "fileID": "1406708778",
+          "sourceCell": {
+            "row": 2,
+            "col": 2
+          },
+          "originalRect": [
+            107,
+            200,
+            25,
+            51
+          ],
+          "replacementRect": [
+            640,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_23",
+          "fileID": "633950765",
+          "sourceCell": {
+            "row": 2,
+            "col": 3
+          },
+          "originalRect": [
+            155,
+            197,
+            28,
+            53
+          ],
+          "replacementRect": [
+            960,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_24",
+          "fileID": "-2016919433",
+          "sourceCell": {
+            "row": 2,
+            "col": 4
+          },
+          "originalRect": [
+            203,
+            197,
+            27,
+            54
+          ],
+          "replacementRect": [
+            1280,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_25",
+          "fileID": "-2003398216",
+          "sourceCell": {
+            "row": 2,
+            "col": 0
+          },
+          "originalRect": [
+            253,
+            202,
+            25,
+            49
+          ],
+          "replacementRect": [
+            0,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_26",
+          "fileID": "-1036854777",
+          "sourceCell": {
+            "row": 2,
+            "col": 1
+          },
+          "originalRect": [
+            299,
+            201,
+            26,
+            50
+          ],
+          "replacementRect": [
+            320,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_27",
+          "fileID": "1254727892",
+          "sourceCell": {
+            "row": 2,
+            "col": 2
+          },
+          "originalRect": [
+            344,
+            201,
+            31,
+            49
+          ],
+          "replacementRect": [
+            640,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_28",
+          "fileID": "1720992541",
+          "sourceCell": {
+            "row": 2,
+            "col": 3
+          },
+          "originalRect": [
+            395,
+            200,
+            26,
+            51
+          ],
+          "replacementRect": [
+            960,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_29",
+          "fileID": "-296305646",
+          "sourceCell": {
+            "row": 2,
+            "col": 4
+          },
+          "originalRect": [
+            445,
+            200,
+            24,
+            51
+          ],
+          "replacementRect": [
+            1280,
+            0,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_30",
+          "fileID": "-1395715822",
+          "sourceCell": {
+            "row": 1,
+            "col": 0
+          },
+          "originalRect": [
+            11,
+            134,
+            27,
+            53
+          ],
+          "replacementRect": [
+            0,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "WlakRight_1",
+          "fileID": "1648926324",
+          "sourceCell": {
+            "row": 1,
+            "col": 0
+          },
+          "originalRect": [
+            56,
+            135,
+            33,
+            51
+          ],
+          "replacementRect": [
+            0,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "WlakRight_2",
+          "fileID": "1869269850",
+          "sourceCell": {
+            "row": 1,
+            "col": 1
+          },
+          "originalRect": [
+            108,
+            135,
+            26,
+            52
+          ],
+          "replacementRect": [
+            320,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "WlakRight_3",
+          "fileID": "1107879081",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            159,
+            137,
+            21,
+            50
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "WlakRight_4",
+          "fileID": "1936322033",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            204,
+            136,
+            26,
+            51
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "WlakRight_5",
+          "fileID": "2095489316",
+          "sourceCell": {
+            "row": 1,
+            "col": 4
+          },
+          "originalRect": [
+            249,
+            136,
+            32,
+            50
+          ],
+          "replacementRect": [
+            1280,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_36",
+          "fileID": "-633932317",
+          "sourceCell": {
+            "row": 1,
+            "col": 1
+          },
+          "originalRect": [
+            300,
+            136,
+            26,
+            51
+          ],
+          "replacementRect": [
+            320,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_37",
+          "fileID": "-2000339705",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            351,
+            135,
+            22,
+            52
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_38",
+          "fileID": "-1752275306",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            396,
+            134,
+            25,
+            53
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_39",
+          "fileID": "-10147882",
+          "sourceCell": {
+            "row": 1,
+            "col": 4
+          },
+          "originalRect": [
+            442,
+            136,
+            30,
+            50
+          ],
+          "replacementRect": [
+            1280,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_40",
+          "fileID": "-1286350399",
+          "sourceCell": {
+            "row": 1,
+            "col": 0
+          },
+          "originalRect": [
+            10,
+            73,
+            27,
+            50
+          ],
+          "replacementRect": [
+            0,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_41",
+          "fileID": "-492001294",
+          "sourceCell": {
+            "row": 1,
+            "col": 1
+          },
+          "originalRect": [
+            61,
+            72,
+            22,
+            51
+          ],
+          "replacementRect": [
+            320,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_42",
+          "fileID": "1323872799",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            107,
+            70,
+            27,
+            53
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_43",
+          "fileID": "-1812790573",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            154,
+            70,
+            30,
+            52
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_44",
+          "fileID": "184131468",
+          "sourceCell": {
+            "row": 1,
+            "col": 4
+          },
+          "originalRect": [
+            202,
+            70,
+            29,
+            53
+          ],
+          "replacementRect": [
+            1280,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_45",
+          "fileID": "-756432247",
+          "sourceCell": {
+            "row": 1,
+            "col": 0
+          },
+          "originalRect": [
+            252,
+            70,
+            26,
+            53
+          ],
+          "replacementRect": [
+            0,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_46",
+          "fileID": "-1148949840",
+          "sourceCell": {
+            "row": 1,
+            "col": 1
+          },
+          "originalRect": [
+            301,
+            71,
+            25,
+            52
+          ],
+          "replacementRect": [
+            320,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_47",
+          "fileID": "-1995518337",
+          "sourceCell": {
+            "row": 1,
+            "col": 2
+          },
+          "originalRect": [
+            348,
+            71,
+            23,
+            51
+          ],
+          "replacementRect": [
+            640,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_48",
+          "fileID": "1004183501",
+          "sourceCell": {
+            "row": 1,
+            "col": 3
+          },
+          "originalRect": [
+            395,
+            70,
+            25,
+            53
+          ],
+          "replacementRect": [
+            960,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "PlayStation - Xenogears - Aveh Chef_49",
+          "fileID": "1534642046",
+          "sourceCell": {
+            "row": 1,
+            "col": 4
+          },
+          "originalRect": [
+            443,
+            71,
+            27,
+            52
+          ],
+          "replacementRect": [
+            1280,
+            448,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Up_1",
+          "fileID": "-1537928684",
+          "sourceCell": {
+            "row": 0,
+            "col": 0
+          },
+          "originalRect": [
+            12,
+            6,
+            25,
+            53
+          ],
+          "replacementRect": [
+            0,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Up_2",
+          "fileID": "-968332895",
+          "sourceCell": {
+            "row": 0,
+            "col": 1
+          },
+          "originalRect": [
+            61,
+            7,
+            24,
+            51
+          ],
+          "replacementRect": [
+            320,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Up_3",
+          "fileID": "-682048678",
+          "sourceCell": {
+            "row": 0,
+            "col": 2
+          },
+          "originalRect": [
+            108,
+            6,
+            25,
+            53
+          ],
+          "replacementRect": [
+            640,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Up_4",
+          "fileID": "1994661677",
+          "sourceCell": {
+            "row": 0,
+            "col": 3
+          },
+          "originalRect": [
+            155,
+            6,
+            27,
+            53
+          ],
+          "replacementRect": [
+            960,
+            896,
+            320,
+            448
+          ]
+        },
+        {
+          "name": "Up_5",
+          "fileID": "1600476273",
+          "sourceCell": {
+            "row": 0,
+            "col": 4
+          },
+          "originalRect": [
+            203,
+            6,
+            25,
+            53
+          ],
+          "replacementRect": [
+            1280,
+            896,
+            320,
+            448
+          ]
+        }
+      ],
+      "atlasLayout": "5 columns × 3 rows of 320×448 pixel cells. Existing sprite IDs map to the corresponding direction/pose; padded rectangles overlap for aliases.",
+      "visibleChefHeightWorld": 0.53,
+      "visibleFeetYWorld": -0.265,
+      "boundsNote": "Chef cell bounds are standardized to 0.4×0.56 world units, with a 0.53-unit visible height and common foot baseline. Existing gameplay colliders and transforms are preserved."
+    },
+    {
+      "key": "cabbage",
+      "path": "Assets/Sprites/cabbage 1.png",
+      "original": [
+        1000,
+        993
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        2000,
+        1986
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "36331f33786384f1ab79cbad10c294fd",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Cabbage.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 0,
+          "top": 8,
+          "width": 1254,
+          "height": 1189,
+          "clearRatio": 0.2774769859257394
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 0,
+          "width": 1000,
+          "height": 914,
+          "clearRatio": 0.3003111782477341
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One round pale-to-bright green leafy cabbage head, centered, layered crinkled overlapping leaves. Preserve source silhouette, camera angle, stem placement and canvas bounds."
+    },
+    {
+      "key": "bok-choy",
+      "path": "Assets/Sprites/boch choy.png",
+      "original": [
+        612,
+        612
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1224,
+        1224
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "c81d5752dcef34404938497926782a2b",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Bok Choy.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 304,
+          "top": 136,
+          "width": 646,
+          "height": 981,
+          "clearRatio": 0.749310658842263
+        },
+        "originalAlpha": {
+          "left": 154,
+          "top": 74,
+          "width": 303,
+          "height": 464,
+          "clearRatio": 0.7713486265966082
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One compact bunch of bok choy, pale creamy green thick stems at lower center opening into dark leafy green leaves at top. Preserve source silhouette, orientation, and placement."
+    },
+    {
+      "key": "brussels-sprout",
+      "path": "Assets/Sprites/brussle sprouts.png",
+      "original": [
+        980,
+        980
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1960,
+        1960
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "4d25f5fb03b1f40cc8410f3533fd3840",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Brussel Sprout.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 268,
+          "top": 242,
+          "width": 716,
+          "height": 773,
+          "clearRatio": 0.7304052868142518
+        },
+        "originalAlpha": {
+          "left": 214,
+          "top": 195,
+          "width": 552,
+          "height": 590,
+          "clearRatio": 0.7385412328196584
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One round compact Brussels sprout, dark-to-bright green tightly wrapped curled layered leaves, same angle and silhouette as source."
+    },
+    {
+      "key": "tomato",
+      "path": "Assets/Sprites/slice-red-tomato-isolated-on-600nw-1993254104 Background Removed.png",
+      "original": [
+        600,
+        600
+      ],
+      "generated": [
+        1254,
+        1254
+      ],
+      "replacement": [
+        1200,
+        1200
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "310eaa83cd0dc4f65879be80b461accf",
+      "refs": [
+        "Assets/Resources/Prefabs/tomato.prefab",
+        "Assets/Resources/Prefabs/Salad/Tomato.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 194,
+          "top": 159,
+          "width": 858,
+          "height": 889,
+          "clearRatio": 0.6238880876251816
+        },
+        "originalAlpha": {
+          "left": 125,
+          "top": 125,
+          "width": 351,
+          "height": 350,
+          "clearRatio": 0.7299361111111111
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One circular red tomato cross-section slice, showing red skin rim, golden seeds and pale red internal ribs, same front-facing round shape and occupied canvas bounds as source. This is a round cut tomato slice, not a whole tomato with foliage."
+    },
+    {
+      "key": "cabbage-left",
+      "path": "Assets/Sprites/Veggies that have been chopped/cbg p1.png",
+      "original": [
+        559,
+        941
+      ],
+      "generated": [
+        967,
+        1627
+      ],
+      "replacement": [
+        1118,
+        1882
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "786eb3e4433764f12bd66cfba99bb2b7",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/RightCabage.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 0,
+          "top": 11,
+          "width": 955,
+          "height": 1612,
+          "clearRatio": 0.2648322738889818
+        },
+        "originalAlpha": {
+          "left": 1,
+          "top": 9,
+          "width": 540,
+          "height": 914,
+          "clearRatio": 0.28867778540318884
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One left half of a freshly chopped green cabbage, preserve original vertical cut orientation, cut edge direction and outer leafy silhouette. Creamy-green inner leaf layers and crisp green outer leaves, matching cartoon whole cabbage."
+    },
+    {
+      "key": "cabbage-right",
+      "path": "Assets/Sprites/Veggies that have been chopped/cbg p2.png",
+      "original": [
+        468,
+        905
+      ],
+      "generated": [
+        901,
+        1744
+      ],
+      "replacement": [
+        936,
+        1810
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "1cef691bb962d423a9ab7282b90df065",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/LeftCabage.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 7,
+          "top": 25,
+          "width": 893,
+          "height": 1707,
+          "clearRatio": 0.22613635206549298
+        },
+        "originalAlpha": {
+          "left": 6,
+          "top": 12,
+          "width": 460,
+          "height": 882,
+          "clearRatio": 0.2429947584643717
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One right half of a freshly chopped green cabbage, preserve original vertical cut orientation, cut edge direction and outer leafy silhouette. Creamy-green inner leaf layers and crisp green outer leaves, matching cartoon whole cabbage."
+    },
+    {
+      "key": "bok-choy-left",
+      "path": "Assets/Sprites/Veggies that have been chopped/bochchoy p1.png",
+      "original": [
+        499,
+        432
+      ],
+      "generated": [
+        1348,
+        1167
+      ],
+      "replacement": [
+        1497,
+        1296
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "3530285920a0f4cf886a88ac26337df4",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/RightBoch.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 3,
+          "top": 19,
+          "width": 1335,
+          "height": 1124,
+          "clearRatio": 0.24611662458458244
+        },
+        "originalAlpha": {
+          "left": 2,
+          "top": 10,
+          "width": 494,
+          "height": 419,
+          "clearRatio": 0.23950679136049877
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One left chopped half of a bok choy bunch, pale cream-green stems and dark-to-bright green leaves. Preserve exact source cut-face orientation, leafy silhouette and canvas positioning."
+    },
+    {
+      "key": "bok-choy-right",
+      "path": "Assets/Sprites/Veggies that have been chopped/bochchoy p2.png",
+      "original": [
+        589,
+        717
+      ],
+      "generated": [
+        1136,
+        1384
+      ],
+      "replacement": [
+        1178,
+        1434
+      ],
+      "scale": 2,
+      "ppu": 200,
+      "maxTextureSize": 2048,
+      "guid": "ee37316a4b5c545e7a35a53d1efb971f",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/LeftBoch.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 0,
+          "top": 1,
+          "width": 1136,
+          "height": 1380,
+          "clearRatio": 0.28630716742652446
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 3,
+          "width": 589,
+          "height": 707,
+          "clearRatio": 0.2800174278319635
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One right chopped half of a bok choy bunch, pale cream-green stems and dark-to-bright green leaves. Preserve exact source cut-face orientation, leafy silhouette and canvas positioning."
+    },
+    {
+      "key": "brussels-left",
+      "path": "Assets/Sprites/Veggies that have been chopped/brussel sprouts 1.png",
+      "original": [
+        277,
+        605
+      ],
+      "generated": [
+        848,
+        1855
+      ],
+      "replacement": [
+        831,
+        1815
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "80f334a61d34241a2bb4a08eb94b204b",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/LeftBrussel.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 0,
+          "top": 6,
+          "width": 848,
+          "height": 1847,
+          "clearRatio": 0.22231475359812847
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 5,
+          "width": 275,
+          "height": 590,
+          "clearRatio": 0.24414476235939972
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One left half of a freshly cut green Brussels sprout, vertically sliced, pale green layered cut face and deep green rounded outer leaves. Preserve source silhouette and cut orientation."
+    },
+    {
+      "key": "brussels-right",
+      "path": "Assets/Sprites/Veggies that have been chopped/brussel sprouts 2.png",
+      "original": [
+        279,
+        600
+      ],
+      "generated": [
+        855,
+        1839
+      ],
+      "replacement": [
+        837,
+        1800
+      ],
+      "scale": 3,
+      "ppu": 300,
+      "maxTextureSize": 2048,
+      "guid": "83fc63136d3aa44ce905d96a9502a05d",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/RightBrussel.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 0,
+          "top": 8,
+          "width": 852,
+          "height": 1827,
+          "clearRatio": 0.24137768746680913
+        },
+        "originalAlpha": {
+          "left": 0,
+          "top": 9,
+          "width": 276,
+          "height": 586,
+          "clearRatio": 0.25676821983273596
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One right half of a freshly cut green Brussels sprout, vertically sliced, pale green layered cut face and deep green rounded outer leaves. Preserve source silhouette and cut orientation."
+    },
+    {
+      "key": "tomato-left",
+      "path": "Assets/Sprites/Veggies that have been chopped/Tomato 1.png",
+      "original": [
+        185,
+        364
+      ],
+      "generated": [
+        894,
+        1759
+      ],
+      "replacement": [
+        740,
+        1456
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 2048,
+      "guid": "ce0567b8bc89a4a78a42c2612d87265e",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/LeftTomato.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 3,
+          "top": 13,
+          "width": 889,
+          "height": 1736,
+          "clearRatio": 0.23892719195495712
+        },
+        "originalAlpha": {
+          "left": 5,
+          "top": 5,
+          "width": 176,
+          "height": 350,
+          "clearRatio": 0.27332937332937335
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One left half of a red tomato split vertically, glossy red outer skin, soft golden seeds and pale red internal ribs on cut face. Preserve source orientation, half silhouette and flat cut edge."
+    },
+    {
+      "key": "tomato-right",
+      "path": "Assets/Sprites/Veggies that have been chopped/tomato 2.png",
+      "original": [
+        183,
+        371
+      ],
+      "generated": [
+        881,
+        1786
+      ],
+      "replacement": [
+        732,
+        1484
+      ],
+      "scale": 4,
+      "ppu": 400,
+      "maxTextureSize": 2048,
+      "guid": "e9b3eae5aea58459ab6a43df51361f1f",
+      "refs": [
+        "Assets/Resources/Prefabs/Salad/Chopped/RightTomato.prefab"
+      ],
+      "alpha": true,
+      "registration": {
+        "sourceAlpha": {
+          "left": 2,
+          "top": 45,
+          "width": 834,
+          "height": 1665,
+          "clearRatio": 0.30825769352499516
+        },
+        "originalAlpha": {
+          "left": 3,
+          "top": 10,
+          "width": 175,
+          "height": 350,
+          "clearRatio": 0.28874847186013286
+        }
+      },
+      "prompt": "Use case: style-transfer. Asset type: transparent cartoon vegetable game sprite. Image 1 is the edit target: retain its exact silhouette, cut edge, orientation and species. Image 2 is the salad character style reference. Redraw cleanly with bold dark brown/black outlines, vivid fresh greens or tomato red, two or three broad cel-shading tones and small warm highlights, matching the illustrated vegetables inside the salad bowl. Keep all subject parts in frame, preserve source aspect ratio and transparent outer margins. No face or eyes, no background, text, hands, plate, bowl, extra vegetable, realistic photo texture or 3D rendering. Keep a real alpha-transparent background. One right half of a red tomato split vertically, glossy red outer skin, soft golden seeds and pale red internal ribs on cut face. Preserve source orientation, half silhouette and flat cut edge."
     }
-  ]
+  ],
+  "uiAssets": [
+    {
+      "path": "Assets/Sprites/CVAThemeCard.png",
+      "method": "Code-drawn sliced UI card",
+      "guid": "88e06feee0584faeb5aa77dc5c0be621"
+    },
+    {
+      "path": "Assets/Sprites/CVAThemeFrame.png",
+      "method": "Code-drawn sliced UI frame",
+      "guid": "620dfc90b857427ba39ed1345a1c5c21"
+    }
+  ],
+  "sceneUpdates": [
+    "KitchenPrep",
+    "OvenStart",
+    "OvenMinigame",
+    "VeggieStart",
+    "SaladGame",
+    "LasagnaStartGame",
+    "LasagnaMiniGame",
+    "MainMenu"
+  ],
+  "originalEnemy": {
+    "name": "Pantry Prowler",
+    "path": "Assets/Sprites/Alien3.png",
+    "description": "Rounded teal alien with orange feelers and feet, large purple eyes, and leaf-shaped fins."
+  }
 }

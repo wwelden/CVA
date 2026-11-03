@@ -9,7 +9,7 @@ public class OffScreen : MonoBehaviour
 {
 
     public void Start(){
-        livesText.text = "";
+        livesText.text = $"LIVES: {lives}";
     }
 
     public int lives = 5;
@@ -26,7 +26,7 @@ public class OffScreen : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag == "Cabbage" || collision.gameObject.tag == "Brussel Sprout"|| collision.gameObject.tag == "Bok Choy"|| collision.gameObject.tag == "Tomato"){
             lives--;
-            livesText.text = livesText.text + "X";
+            livesText.text = $"LIVES: {lives}";
             Destroy(collision.gameObject);
             if(lives == 0){
                 GameOver();

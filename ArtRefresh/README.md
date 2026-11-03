@@ -1,39 +1,46 @@
-# CVA salad-style artwork refresh
+# Chefs vs Aliens: unified art refresh
 
-Nine replacement assets for [wwelden/CVA](https://github.com/wwelden/CVA), based on commit acaa6d23bc69df392fd15a2c03a8d70ef838bb1e.
+40 generated replacement assets, two sliced UI graphics, and eight updated scenes for [wwelden/CVA](https://github.com/wwelden/CVA). The existing salad character and the supplied Battlegrounds screenshot set the visual style: bold dark contours, rounded forms, clear cel shading, bright food colors and warm neutral backgrounds.
 
-The visual reference is the existing salad character with big eyes. All nine replacements use dark contours, vivid colors, rounded forms, and simple cel shading. Original compositions are followed so existing overlays retain their space. Props and backgrounds do not acquire new faces.
+## Screens covered
 
-## Replacements
+| Screenshot / scene | Changes |
+|---|---|
+| KitchenPrep | Isometric kitchen, sign and title, illustrated chef with walking poses, station labels and timer HUD. |
+| OvenStart | Illustrated oven backdrop, crisp native instructions and matching controls. |
+| OvenMinigame | Brick oven, pie, thermometer, chef life icons, coordinated timing-zone colors and controls. |
+| VeggieStart | Illustrated vegetable board and knives, readable native title/rules, matching controls. |
+| SaladGame | Illustrated kitchen, knife, whole/flying vegetables and chopped halves, timer and lives HUD. |
+| LasagnaStartGame | Illustrated board, native title/rules and Play button, matching ingredient example. |
+| LasagnaMiniGame | Illustrated kitchen, quiet chalkboard sidebar, timer board, plate and ingredients, readable HUD. |
+| MainMenu | Cartoon tabletop, menu sheet, title and food illustrations; four menu actions use live TextMesh Pro labels. |
 
-| Asset | Original pixels | Replacement pixels | Scenes |
-|---|---:|---:|---|
-| fork2.jpg | 480 × 320 | 1440 × 960 | MainMenu.unity |
-| Screenshot 2024-12-16 115522.png | 412 × 278 | 1648 × 1112 | MainMenu.unity |
-| pieOven.jpg | 470 × 368 | 1410 × 1104 | OvenStart.unity |
-| Oven.jpg | 612 × 459 | 1224 × 918 | OvenMinigame.unity |
-| Screenshot 2024-11-13 100538.png | 518 × 511 | 1036 × 1022 | LCProject.unity, LasagnaMiniGame.unity |
-| veggie.jpg | 700 × 547 | 1400 × 1094 | VeggieStart.unity |
-| Screenshot 2024-11-27 092111.png | 156 × 185 | 1092 × 1295 | LasagnaStartGame.unity, LasagnaMiniGame.unity |
-| RedCookbook.jpg | 600 × 400 | 1800 × 1200 | MainMenu.unity |
-| Screenshot 2024-12-16 115435.png | 612 × 585 | 1224 × 1170 | MainMenu.unity |
+The two numeric lives-display expressions in OffScreen.cs now show LIVES plus the remaining count. The life decrement and game-over behavior are unchanged.
 
-## Install
+## Original alien replacement
 
-Close Unity, back up or commit your project, and use this branch or copy the packaged unity-patch/ over the project root, retaining the Assets/Sprites paths. Include each .meta file. Open with Unity 2022.3.43f1 and allow textures to reimport. The branch/PR provides the same changes without manual copying.
+Alien3.png now contains an original Pantry Prowler design: a rounded teal alien with orange feelers and feet, large purple eyes and leaf-shaped side fins. The previous film creature is no longer used by this texture. Its legacy filename and GUID are retained so prefabs keep their references. The previous creature and old chef sheet are omitted from the downloadable comparison originals; Git history retains the prior versions.
 
-Existing filenames, GUIDs, sprite IDs, pivots, wrap/filter modes, sprite mesh settings and scene references are preserved. Each texture is resized to an integer multiple of its old dimensions; pixels-per-unit increases by exactly the same factor, preserving world-space size. Maximum texture sizes cover the replacements, and compression quality is raised to 100 while keeping existing platform compression modes. Generated masters are saved under artwork/; their native sizes are listed separately in manifest.json. Modest resampling to an exact integer scale is documented there; replacement dimensions are not claims about native generation resolution.
+## Install and review
 
-## Validation and limits
+Use branch art/full-game-style-refresh from your fork, or copy the complete unity-patch/ directory from the downloadable pack over the project root. Include the scene files, the two-line OffScreen.cs presentation change, and every .meta file. Copying textures alone will miss the native UI changes. Open with Unity 2022.3.43f1 and allow assets to reimport.
 
-Verified final image dimensions and aspect ratios, unchanged asset GUIDs, unchanged world-space sprite bounds, and empty custom sprite geometry for each modified asset. No scenes, scripts, animation sheets or colliders were modified. Reviewed all nine generated masters visually against the salad reference. Unity Editor is not installed at the standard location, so these assets have not been play-tested or rebuilt for WebGL. Check MainMenu, LasagnaMiniGame, LasagnaStartGame, OvenStart, OvenMinigame and VeggieStart in Unity, especially text visibility, the lasagna ingredient example and oven placement. The itch.io build has not been updated.
+Play through MainMenu → KitchenPrep → each instruction scene → each minigame. Check movement, front/back/side animation cycles, cooking-station triggers, Play/Exit controls, timing zones, lives and timers, plate/ingredient catches, vegetable chopping and halves, and the Pantry Prowler in Battlegrounds. Unity Editor was unavailable in this environment, so engine compilation, play mode, WebGL size/memory/performance and the itch.io build remain unverified. The existing itch.io upload has not been changed.
 
-## Audit and scope
+## Technical compatibility
 
-Inspected 105 image assets under Sprites (including the TextMesh Pro sprite directory); 79 are referenced by serialized project files. This count includes indirect prefab references and disabled/development scenes, not only assets reached by the active build. The audit records dimensions, metadata and references in asset-audit.json.
+Existing texture GUIDs, sprite IDs and pivots are preserved. Single-sprite textures retain their file aspect ratio and pixels-per-unit proportion so their world-space canvas sizes remain the same. Transparent foreground art is registered to the original alpha bounds. Import texture limits cover the installed dimensions. New controls use small uncompressed sliced UI cards.
 
-This is a focused pass on nine low-resolution background, decorative food and instruction assets. It does not make every existing asset in the game stylistically uniform. The chef's sliced pixel-art animation sheet, small gameplay sprites, planet prefabs, and the existing salad style reference were preserved. Tiny menu labels and rule text baked into images are better migrated to live TextMesh Pro text in a UI pass; enlarging the screenshots would not restore sharp lettering. Full replacement of character animation and gameplay sprites would need a coordinated separate pass for animations, silhouettes and collision shapes.
+The chef sheet uses a new 5×3 grid of padded cells and 15 illustrated poses. All 55 original slice names, internal IDs and sprite IDs are retained and mapped to their direction/pose; existing animation clips and keyframe timing are unchanged. Visible chef height is normalized to 0.53 world units with a common foot baseline. Cell bounds are standardized to 0.4×0.56 world units, so the atlas has an explicit exception to the single-sprite bounds rule. Existing player transforms and gameplay colliders are unchanged.
 
-## Generation provenance
+No physics components, world transforms, prefab files, gameplay component settings or button callbacks were modified. Native UI layout, text, decorative visibility, button colors, camera background colors and selected sprite tints were updated in the eight scenes.
 
-Used the built-in image_gen tool with each original asset as the edit target and the salad character as a separate style reference. Full final prompts and native generated dimensions are in manifest.json. Earlier photographic drafts were superseded and are not installed.
+## Validation and previews
+
+validation.json records image dimension/alpha/import checks, preserved GUIDs, the chef slice migration, scene YAML parsing, local references, new UI hierarchy, physics and custom-component comparisons, and unchanged button callbacks and animation files. Static scene-data layout previews were reviewed for composition and estimated text fit. These previews approximate Unity fonts/materials and omit dynamically spawned gameplay; they are not evidence of an engine play-test.
+
+[Preview gallery](preview.md) includes the clean scene layout reconstructions. The downloadable preview.html adds all before/after assets and the chef frame inspection. manifest.json contains full generation prompts, native generated dimensions, final installed dimensions, scaling, transparency registration and atlas mappings. Generated image dimensions and installed dimensions are recorded separately; normalization can include modest resampling. The asset audit records the original image inventory and serialized references, including indirect and development-scene references.
+
+## Generation
+
+Artwork was created with the built-in image_gen tool, using each source image as the edit target and the salad character / approved in-game screenshot as style references. The two simple sliced UI shapes were drawn in code. Generated masters are preserved in the downloadable artwork/ directory. Remaining scenes outside the supplied screenshots, such as the space cutscenes, have not received a complete art pass.

@@ -1,57 +1,47 @@
-# Salad style artwork preview
+# Unified artwork preview
 
-Reference: the existing salad character. Final installed artwork is shown below; original versions are available through GitHub file history.
+40 generated replacement assets and eight updated scenes. These are static layout reconstructions from scene data; Unity play-testing is pending.
 
-## tabletop
+## KitchenPrep
 
-480 × 320 → 1440 × 960 pixels.
+![KitchenPrep scene-data layout preview](previews/KitchenPrep.jpg)
 
-![tabletop](../Assets/Sprites/fork2.jpg)
+## OvenStart
 
-## lasagna
+![OvenStart scene-data layout preview](previews/OvenStart.jpg)
 
-412 × 278 → 1648 × 1112 pixels.
+## OvenMinigame
 
-![lasagna](../Assets/Sprites/Screenshot%202024-12-16%20115522.png)
+![OvenMinigame scene-data layout preview](previews/OvenMinigame.jpg)
 
-## pie oven
+## VeggieStart
 
-470 × 368 → 1410 × 1104 pixels.
+![VeggieStart scene-data layout preview](previews/VeggieStart.jpg)
 
-![pie-oven](../Assets/Sprites/pieOven.jpg)
+## SaladGame
 
-## brick oven
+![SaladGame scene-data layout preview](previews/SaladGame.jpg)
 
-612 × 459 → 1224 × 918 pixels.
+## LasagnaStartGame
 
-![brick-oven](../Assets/Sprites/Oven.jpg)
+![LasagnaStartGame scene-data layout preview](previews/LasagnaStartGame.jpg)
 
-## kitchen
+## LasagnaMiniGame
 
-518 × 511 → 1036 × 1022 pixels.
+![LasagnaMiniGame scene-data layout preview](previews/LasagnaMiniGame.jpg)
 
-![kitchen](../Assets/Sprites/Screenshot%202024-11-13%20100538.png)
+## MainMenu
 
-## veggie board
+![MainMenu scene-data layout preview](previews/MainMenu.jpg)
 
-700 × 547 → 1400 × 1094 pixels.
+## Pantry Prowler
 
-![veggie-board](../Assets/Sprites/veggie.jpg)
+Original replacement for Alien3.
 
-## lasagna example
+![Pantry Prowler](../Assets/Sprites/Alien3.png)
 
-156 × 185 → 1092 × 1295 pixels.
+## Chef frames
 
-![lasagna-example](../Assets/Sprites/Screenshot%202024-11-27%20092111.png)
+15 poses mapped to the original animation references; all 55 slice identities are retained.
 
-## cookbook
-
-600 × 400 → 1800 × 1200 pixels.
-
-![cookbook](../Assets/Sprites/RedCookbook.jpg)
-
-## pie
-
-612 × 585 → 1224 × 1170 pixels.
-
-![pie](../Assets/Sprites/Screenshot%202024-12-16%20115435.png)
+![Chef animation frame inspection](previews/chef-frames.png)
