@@ -1,0 +1,193 @@
+{
+  "name": "Pantry Prowler charge and throw",
+  "fps": 8,
+  "durationSeconds": 0.75,
+  "releaseSeconds": 0.625,
+  "frameOrder": "left to right, top row then bottom row",
+  "ids": {
+    "atlas": "96501a05a4b3791397871da01d6710b9",
+    "clip": "924a7b15fe5fb3a3b10a08ac03bba778"
+  },
+  "records": [
+    {
+      "frame": 1,
+      "scale": 1.2619926199261993,
+      "torsoScale": 0.9717314487632509,
+      "placement": {
+        "x": 49,
+        "y": 66
+      },
+      "bounds": {
+        "body": {
+          "x0": 285,
+          "x1": 625,
+          "y0": 224,
+          "y1": 497,
+          "width": 341,
+          "cx": 455
+        },
+        "alpha": {
+          "x0": 215,
+          "x1": 676,
+          "y0": 133,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_0",
+      "fileID": 21300100
+    },
+    {
+      "frame": 2,
+      "scale": 1.2573529411764706,
+      "torsoScale": 1.0073260073260073,
+      "placement": {
+        "x": 51,
+        "y": 52
+      },
+      "bounds": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 224,
+          "y1": 497,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 217,
+          "x1": 676,
+          "y0": 143,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_1",
+      "fileID": 21300101
+    },
+    {
+      "frame": 3,
+      "scale": 1.2573529411764706,
+      "torsoScale": 1.0110294117647058,
+      "placement": {
+        "x": 52,
+        "y": 50
+      },
+      "bounds": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 223,
+          "y1": 497,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 217,
+          "x1": 676,
+          "y0": 130,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_2",
+      "fileID": 21300102
+    },
+    {
+      "frame": 4,
+      "scale": 1.2573529411764706,
+      "torsoScale": 1.0223048327137547,
+      "placement": {
+        "x": 52,
+        "y": 46
+      },
+      "bounds": {
+        "body": {
+          "x0": 284,
+          "x1": 626,
+          "y0": 224,
+          "y1": 497,
+          "width": 343,
+          "cx": 455
+        },
+        "alpha": {
+          "x0": 217,
+          "x1": 677,
+          "y0": 114,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_3",
+      "fileID": 21300103
+    },
+    {
+      "frame": 5,
+      "scale": 1.2619926199261993,
+      "torsoScale": 0.9649122807017544,
+      "placement": {
+        "x": 49,
+        "y": 71
+      },
+      "bounds": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 223,
+          "y1": 497,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 102,
+          "x1": 676,
+          "y0": 193,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_4",
+      "fileID": 21300104
+    },
+    {
+      "frame": 6,
+      "scale": 1.2573529411764706,
+      "torsoScale": 0.9717314487632509,
+      "placement": {
+        "x": 52,
+        "y": 68
+      },
+      "bounds": {
+        "body": {
+          "x0": 284,
+          "x1": 625,
+          "y0": 223,
+          "y1": 497,
+          "width": 342,
+          "cx": 454.5
+        },
+        "alpha": {
+          "x0": 213,
+          "x1": 675,
+          "y0": 190,
+          "y1": 543
+        }
+      },
+      "name": "PantryProwlerShoot_5",
+      "fileID": 21300105
+    }
+  ],
+  "orb": {
+    "rect": {
+      "left": 102,
+      "top": 280,
+      "width": 101,
+      "height": 101
+    },
+    "muzzle": {
+      "x": -2.98,
+      "y": 0,
+      "z": 0
+    },
+    "projectileWidth": 345,
+    "projectileHeight": 345,
+    "worldY": "Existing lane Y retained"
+  },
+  "generation": "Built-in imagegen using original Pantry Prowler; normalized with Sharp, detached orb reused as projectile.",
+  "unityPlaytest": "Pending: previous attempt aborted in Package Manager startup."
+}

@@ -173,3 +173,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mSpeed: 0
   shot: {fileID: 5047957583806563965}
+  impactPrefab: {fileID: 100100, guid: 2baa513b2a50ff1ec14f9af925215bd3, type: 3}

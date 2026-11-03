@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "spriteFrames": 6,
+  "impactFrames": 6,
+  "attackDurationSeconds": 0.75,
+  "projectileReleaseSeconds": 0.625,
+  "impactDurationSeconds": 0.3,
+  "previewFrames": 13,
+  "preserved": [
+    "Shooter prefab and physics",
+    "Beam physics, speed and collision tags; only impact prefab reference added",
+    "Existing walk and idle sprites and clips",
+    "Projectile GUID, PPU and canvas",
+    "Battlefield lane Y"
+  ],
+  "behaviorTests": "29 assertions using actual Shooter, animation bridge and AlienShot sources with Unity API stubs",
+  "compile": "All three actual changed scripts compiled against Unity 2022.3 engine assemblies with GameData/audio contracts.",
+  "unityImportAndGameplay": "Pending: prior batch attempt aborted during Package Manager startup before asset import."
+}

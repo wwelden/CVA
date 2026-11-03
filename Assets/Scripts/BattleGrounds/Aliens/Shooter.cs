@@ -9,6 +9,7 @@ public class Shooter : MonoBehaviour
     
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
+    private PantryProwlerAnimation attackAnimation;
 
     public float speed = 0.5f;
     public float lifeTime = 30f;
@@ -26,6 +27,7 @@ public class Shooter : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        attackAnimation = GetComponent<PantryProwlerAnimation>();
     }
 
     void Update(){
@@ -77,24 +79,52 @@ public class Shooter : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if(reloading == false && pancaked == false){
             if (other.gameObject.CompareTag("Food")){
-                Instantiate(shotPrefab, gameObject.transform.position, gameObject.transform.rotation);
-                audioSource = GameObject.FindGameObjectWithTag("AudioManagerLaser");
-                audioSource.GetComponent<AudioManager2>().playLaser = true;
                 reloading = true;
-                //Kerpow!
-                // Debug.Log("Reloading Start");
-                StartCoroutine(ReloadingTime());
+                StartCoroutine(FireAndReload());
 
             }
         }
     }
 
-    IEnumerator ReloadingTime() {
-        // Debug.Log("Started Coroutine at timestamp : " + Time.time);
+    IEnumerator FireAndReload()
+    {
+        bool animated = attackAnimation != null && attackAnimation.isActiveAndEnabled;
+        if (animated)
+        {
+            attackAnimation.BeginShot();
+            yield return new WaitForSeconds(PantryProwlerAnimation.ShotReleaseTime);
+        }
+
+        // A pancake during the wind-up cancels the pending projectile.
+        if (!pancaked && (!animated || (attackAnimation.isActiveAndEnabled && attackAnimation.IsShooting)))
+        {
+            Vector3 origin = animated ? attackAnimation.ShotPosition : transform.position;
+            Instantiate(shotPrefab, origin, transform.rotation);
+            audioSource = GameObject.FindGameObjectWithTag("AudioManagerLaser");
+            if (audioSource != null)
+            {
+                AudioManager2 audio = audioSource.GetComponent<AudioManager2>();
+                if (audio != null)
+                    audio.playLaser = true;
+            }
+        }
+
+        if (animated)
+        {
+            yield return new WaitForSeconds(PantryProwlerAnimation.ShotDuration -
+                PantryProwlerAnimation.ShotReleaseTime);
+            attackAnimation.EndShot();
+        }
         yield return new WaitForSeconds(reloadtime);
-        // Debug.Log("Reloading Done");
-        // Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         reloading = false;
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        reloading = false;
+        if (attackAnimation != null)
+            attackAnimation.EndShot();
     }
     public void TurnBlue()
     {

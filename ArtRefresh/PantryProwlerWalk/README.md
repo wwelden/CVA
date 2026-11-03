@@ -1,5 +1,7 @@
 # Pantry Prowler walking animation
 
+Shooting extension: see [antenna charge and throw](../PantryProwlerShoot/README.md). The combined branch now adds a third Animator state and changes projectile timing; the original walk-only validation below describes the earlier commit.
+
 Six transparent walking poses for the original teal Pantry Prowler, facing left to match the Shooter enemy. The loop runs at 8 fps (0.75 seconds) with alternating suction-cup steps, a small body bob and feeler sway.
 
 ![Walk loop](walk.gif)
