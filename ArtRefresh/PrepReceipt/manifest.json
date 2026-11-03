@@ -1,0 +1,33 @@
+{
+  "name": "Prep results receipt",
+  "scene": "Assets/Scenes/EndPrepTime.unity",
+  "paper": "Assets/Sprites/CVAPrepReceipt.png",
+  "paperGuid": "03a849e61c399e35c475af52f3dc2f03",
+  "baseCommit": "180321e2e58bdb447df755fa4ed5f315ec5dfe24",
+  "layout": {
+    "paperSize": [
+      1536,
+      1920
+    ],
+    "canvasReference": [
+      3840,
+      2160
+    ],
+    "scaler": "Existing height match, unchanged",
+    "rows": [
+      "Pies",
+      "Salads",
+      "Lasagna"
+    ]
+  },
+  "liveBindings": [
+    "pieText",
+    "veggieText",
+    "lasagnaText",
+    "totalText",
+    "waveNumber"
+  ],
+  "logic": "EarnedMonsters and prepControls unchanged. Total prepared is the sum before the existing +100 reserve bonus; explanatory note avoids mislabeling that total as after-bonus.",
+  "flow": "Existing automatic battle transition after six seconds retained; no added button.",
+  "generation": "Built-in imagegen receipt paper, composed with native uGUI live text and existing cartoon food/tabletop assets."
+}
