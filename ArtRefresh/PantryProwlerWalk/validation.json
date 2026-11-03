@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "slices": 6,
+  "previewFrames": 6,
+  "previewDelayMs": [
+    120,
+    130,
+    120,
+    130,
+    120,
+    130
+  ],
+  "worldCanvas": [
+    9,
+    6.6
+  ],
+  "preserved": [
+    "All pre-existing prefab components byte-for-byte",
+    "Shooter movement and combat script",
+    "Colliders and rigidbody",
+    "SpriteRenderer tint, sorting and idle sprite",
+    "Original game scenes"
+  ],
+  "checks": [
+    "GUID uniqueness and references",
+    "Slice/frame byte comparison",
+    "Native clip and controller YAML",
+    "No transform or color animation",
+    "Fixed foot baseline"
+  ],
+  "unityEditorCheck": "See unity-result.json when available; full gameplay playtest remains pending."
+}

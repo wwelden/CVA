@@ -1,0 +1,10 @@
+{
+  "editor": "2022.3.62f3",
+  "projectTarget": "2022.3.43f1",
+  "editorCheck": "Blocked before asset import: Unity Package Manager process failed to launch and Editor aborted with SIGABRT.",
+  "csharpCompile": {
+    "passed": true,
+    "method": "Roslyn compilation against installed Unity 2022.3 CoreModule, AnimationModule and netstandard 2.1 reference assemblies; minimal Shooter field contract used in place of the full game assembly."
+  },
+  "fullGameplayPlaytest": false
+}
