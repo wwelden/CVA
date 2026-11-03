@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "originalObjectIDsPreserved": true,
+  "panelBindingsPreserved": 2,
+  "rewardTextBindingsPreserved": 2,
+  "initialPanelState": "Both inactive",
+  "rewardCalculationsAndPlayerPrefs": "Unchanged",
+  "automaticKitchenReturnSeconds": 3,
+  "unchangedWorldComponents": 22,
+  "unchangedLogicComponents": 10,
+  "layouts": [
+    {
+      "result": "win",
+      "aspect": "16:9",
+      "withinViewport": true
+    },
+    {
+      "result": "win",
+      "aspect": "16:10",
+      "withinViewport": true
+    },
+    {
+      "result": "win",
+      "aspect": "4:3",
+      "withinViewport": true
+    },
+    {
+      "result": "lose",
+      "aspect": "16:9",
+      "withinViewport": true
+    },
+    {
+      "result": "lose",
+      "aspect": "16:10",
+      "withinViewport": true
+    },
+    {
+      "result": "lose",
+      "aspect": "4:3",
+      "withinViewport": true
+    }
+  ],
+  "preview": "Scene-data reconstructions with illustrative rewards: win 55, lose 15. Not Unity screenshots.",
+  "unityPlaytest": "Pending; the earlier Unity batch attempt failed during Package Manager startup."
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Lasagna success and game-over overlays",
+  "scene": "Assets/Scenes/LasagnaMiniGame.unity",
+  "baseCommit": "180321e2e58bdb447df755fa4ed5f315ec5dfe24",
+  "assets": [
+    {
+      "name": "CVALasagnaSuccess",
+      "path": "Assets/Sprites/CVALasagnaSuccess.png",
+      "guid": "da8051a69598b75d482176d355f01333"
+    },
+    {
+      "name": "CVALasagnaFailure",
+      "path": "Assets/Sprites/CVALasagnaFailure.png",
+      "guid": "6e231464d46bd6ba45772e91fb22807d"
+    }
+  ],
+  "panels": [
+    {
+      "kind": "win",
+      "panelID": "986158366294850270",
+      "cardID": "980000001",
+      "art": "Assets/Sprites/CVALasagnaSuccess.png",
+      "liveRewardComponent": "882620733",
+      "initiallyInactive": true
+    },
+    {
+      "kind": "lose",
+      "panelID": "8239149653504028291",
+      "cardID": "980000029",
+      "art": "Assets/Sprites/CVALasagnaFailure.png",
+      "liveRewardComponent": "1168864373",
+      "initiallyInactive": true
+    }
+  ],
+  "cardSize": [
+    2000,
+    1640
+  ],
+  "canvas": [
+    3840,
+    2160
+  ],
+  "automaticReturnSeconds": 3,
+  "logic": "timer.cs and all gameplay fields/reward thresholds/PlayerPrefs writes untouched. Panels stay inactive until existing code shows them.",
+  "generation": "Built-in imagegen illustrations from original LasangaEyes identity reference; native uGUI cards and live TextMesh Pro headings/rewards."
+}
