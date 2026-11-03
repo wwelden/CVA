@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "spriteFrames": 6,
+  "attackDurationSeconds": 0.75,
+  "projectileReleaseSeconds": 0.625,
+  "previewFrames": 13,
+  "preserved": [
+    "Shooter prefab and physics",
+    "Beam prefab, speed and collision behavior",
+    "Existing walk and idle sprites and clips",
+    "Projectile GUID, PPU and canvas",
+    "Battlefield lane Y"
+  ],
+  "behaviorTests": "22 assertions using actual Shooter and bridge sources with Unity API stubs",
+  "compile": "Actual Shooter and bridge compiled against Unity 2022.3 engine assemblies with GameData/audio contracts.",
+  "unityImportAndGameplay": "Pending: prior batch attempt aborted during Package Manager startup before asset import."
+}

@@ -30,6 +30,11 @@ public static class ProwlerWalkCheck
             var keys = AnimationUtility.GetObjectReferenceCurve(walk, binding);
             Check(keys.Length == 7 && keys.All(k => k.value != null), "All sprite keyframes resolve");
             Check(keys.Take(6).Select(k => k.value).Distinct().Count() == 6 && keys[0].value == keys[6].value, "Six frames and closing key");
+            var shoot = AssetDatabase.LoadAssetAtPath<AnimationClip>("Assets/PantryProwlerShoot.anim");
+            Check(shoot != null && !shoot.isLooping && Mathf.Abs(shoot.length - .75f) < .001f, "One-shot clip");
+            var shotBinding = AnimationUtility.GetObjectReferenceCurveBindings(shoot).Single();
+            Check(shotBinding.path == "" && shotBinding.propertyName == "m_Sprite", "Sprite-only shot clip");
+            Check(AnimationUtility.GetObjectReferenceCurve(shoot, shotBinding).All(k => k.value != null), "Shot sprite references resolve");
             var prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Resources/Prefabs/Shooter.prefab");
             var go = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
             var animator = go.GetComponent<Animator>();
@@ -37,10 +42,10 @@ public static class ProwlerWalkCheck
             var shooter = go.GetComponent<Shooter>();
             Check(animator != null && bridge != null, "Prefab components");
             var controller = (AnimatorController)animator.runtimeAnimatorController;
-            Check(controller.parameters.Single().name == "Walking", "Controller parameter");
+            Check(controller.parameters.Any(p => p.name == "Walking") && controller.parameters.Any(p => p.name == "Shooting"), "Controller parameters");
             var machine = controller.layers[0].stateMachine;
             Check(machine.defaultState.name == "Idle", "Default idle state");
-            Check(machine.states.Length == 2 && machine.states.All(s => !s.state.writeDefaultValues), "Two states with write defaults off");
+            Check(machine.states.Length == 3 && machine.states.All(s => !s.state.writeDefaultValues), "Three states with write defaults off");
             foreach (var state in machine.states)
             {
                 var transition = state.state.transitions.Single();

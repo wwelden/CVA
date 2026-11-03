@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 96501a05a4b3791397871da01d6710b9
+TextureImporter:
+  internalIDToNameTable:
+    - first:
+        "213": 21300100
+      second: PantryProwlerShoot_0
+    - first:
+        "213": 21300101
+      second: PantryProwlerShoot_1
+    - first:
+        "213": 21300102
+      second: PantryProwlerShoot_2
+    - first:
+        "213": 21300103
+      second: PantryProwlerShoot_3
+    - first:
+        "213": 21300104
+      second: PantryProwlerShoot_4
+    - first:
+        "213": 21300105
+      second: PantryProwlerShoot_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 100
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot:
+    x: 0.5
+    y: 0.5
+  spritePixelsToUnits: 100
+  spriteBorder:
+    x: 0
+    y: 0
+    z: 0
+    w: 0
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+    - serializedVersion: 3
+      buildTarget: DefaultTexturePlatform
+      maxTextureSize: 4096
+      resizeAlgorithm: 0
+      textureFormat: -1
+      textureCompression: 0
+      compressionQuality: 100
+      crunchedCompression: 0
+      allowsAlphaSplitting: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      androidETC2FallbackOverride: 0
+      forceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      buildTarget: Standalone
+      maxTextureSize: 4096
+      resizeAlgorithm: 0
+      textureFormat: -1
+      textureCompression: 0
+      compressionQuality: 100
+      crunchedCompression: 0
+      allowsAlphaSplitting: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      androidETC2FallbackOverride: 0
+      forceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      buildTarget: WebGL
+      maxTextureSize: 4096
+      resizeAlgorithm: 0
+      textureFormat: -1
+      textureCompression: 0
+      compressionQuality: 100
+      crunchedCompression: 0
+      allowsAlphaSplitting: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      androidETC2FallbackOverride: 0
+      forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+      - serializedVersion: 2
+        name: PantryProwlerShoot_0
+        rect:
+          serializedVersion: 2
+          x: 0
+          y: 660
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 182fd54c30c1cc94946ec03713340899
+        internalID: 21300100
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+      - serializedVersion: 2
+        name: PantryProwlerShoot_1
+        rect:
+          serializedVersion: 2
+          x: 900
+          y: 660
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 0d41f70cee6945b2886dfc41ec5c5f3d
+        internalID: 21300101
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+      - serializedVersion: 2
+        name: PantryProwlerShoot_2
+        rect:
+          serializedVersion: 2
+          x: 1800
+          y: 660
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 8c28f5aa3f4adc5223c735ae6f8db08a
+        internalID: 21300102
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+      - serializedVersion: 2
+        name: PantryProwlerShoot_3
+        rect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 1752e8c5c8c27198e92ede9eb0dd9f45
+        internalID: 21300103
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+      - serializedVersion: 2
+        name: PantryProwlerShoot_4
+        rect:
+          serializedVersion: 2
+          x: 900
+          y: 0
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 11ddb0f3568e3392f7a66b7b8ff1be31
+        internalID: 21300104
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+      - serializedVersion: 2
+        name: PantryProwlerShoot_5
+        rect:
+          serializedVersion: 2
+          x: 1800
+          y: 0
+          width: 900
+          height: 660
+        alignment: 0
+        pivot:
+          x: 0.5
+          y: 0.5
+        border:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
+        outline: []
+        physicsShape: []
+        tessellationDetail: 0
+        bones: []
+        spriteID: 510b4a61366ca4939fd13c19217792d0
+        internalID: 21300105
+        vertices: []
+        indices: ""
+        edges: []
+        weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff882f934b4c3ffdd66dc72c14f6a9d7
+    internalID: 0
+    vertices: []
+    indices: null
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PantryProwlerShoot_0: 21300100
+      PantryProwlerShoot_1: 21300101
+      PantryProwlerShoot_2: 21300102
+      PantryProwlerShoot_3: 21300103
+      PantryProwlerShoot_4: 21300104
+      PantryProwlerShoot_5: 21300105
+  mipmapLimitGroupName: null
+  pSDRemoveMatte: 0
+  userData: null
+  assetBundleName: null
+  assetBundleVariant: null
