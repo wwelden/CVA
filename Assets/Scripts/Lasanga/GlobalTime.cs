@@ -31,7 +31,6 @@ public class GlobalTime : MonoBehaviour
                timer = 0;
               } 
             PlayerPrefs.SetFloat("Timer", timer);
-            PlayerPrefs.Save();
         }
 
         else if (timer == 0){
@@ -41,6 +40,11 @@ public class GlobalTime : MonoBehaviour
           }
         
         }
+    }
+
+    // Persist the timer once on scene exit instead of writing storage every frame.
+    void OnDisable(){
+       PlayerPrefs.Save();
     }
 
     public void EndPrep(){

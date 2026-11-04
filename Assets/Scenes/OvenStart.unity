@@ -581,7 +581,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -410.4}
-  m_SizeDelta: {x: 1843.2001, y: 345.59995}
+  m_SizeDelta: {x: 1400, y: 460}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522830459
 MonoBehaviour:
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Click or press Space while the marker is in the green zone to earn Food Reserves.\n\nRed costs a life. You have three lives.\n\nSpend reserves on any unlocked food monster."
+  m_text: "Click or press Space while the thermometer is under the green zone to earn Food Reserves.\n\nRed costs a life. You have three lives.\n\nSpend reserves on any unlocked food monster."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

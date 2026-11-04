@@ -53,6 +53,12 @@ public sealed class BattlegroundAlienMotion : MonoBehaviour
         BattlegroundFoodBurst.Spawn(source.bounds.center, source, BattlegroundFoodBurst.Flavor.Syrup);
     }
 
+    // Syrup wore off: go back to the normal walk.
+    public void EndPancake()
+    {
+        pancakeAge = -1f;
+    }
+
     // Quick flash and squash when food lands a hit.
     public void Hit()
     {
@@ -87,12 +93,14 @@ public sealed class BattlegroundAlienMotion : MonoBehaviour
         float height = source.sprite.bounds.size.y;
         if (pancakeAge >= 0f)
         {
+            // Stuck in syrup, not flattened: a brief splat that springs back,
+            // then a slow sticky wobble for as long as the alien is held.
             pancakeAge += Time.deltaTime;
-            float t = Mathf.Clamp01(pancakeAge / 0.22f);
-            float settle = Mathf.Sin(t * Mathf.PI) * 0.12f;
-            sx = Mathf.Lerp(1f, 1.38f, t) + settle;
-            sy = Mathf.Lerp(1f, 0.32f, t) - settle * 0.5f;
-            tilt = Mathf.Sin(pancakeAge * 27f) * 7f * Mathf.Exp(-pancakeAge * 8f);
+            float splat = Mathf.Sin(pancakeAge * 30f) * Mathf.Exp(-pancakeAge * 7f);
+            float wobble = Mathf.Sin(pancakeAge * 3.5f + phase);
+            sx = 1f + 0.18f * splat + 0.03f * wobble;
+            sy = 1f - 0.22f * splat - 0.03f * wobble;
+            tilt = wobble * 2.5f;
         }
         else
         {

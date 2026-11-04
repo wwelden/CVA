@@ -93,7 +93,14 @@ public sealed class MenuSoundSettings : MonoBehaviour
         rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(1f, 0f);
         rect.anchoredPosition = new Vector2(-28, 28);
 
-        Image box = RuntimeUI.Panel("Sound Panel", canvas, RuntimeUI.PanelColor, new Vector2(600, 300));
+        // Full-screen dim behind an opaque box, so menu text doesn't show through and can't be clicked.
+        var dim = RuntimeUI.Rect("Sound Dim", canvas);
+        RuntimeUI.Stretch(dim);
+        dim.gameObject.AddComponent<Image>().color = new Color(0f, 0f, 0f, 0.6f);
+
+        Color opaque = RuntimeUI.PanelColor;
+        opaque.a = 1f;
+        Image box = RuntimeUI.Panel("Sound Panel", dim, opaque, new Vector2(600, 300));
         var layout = box.gameObject.AddComponent<VerticalLayoutGroup>();
         layout.childAlignment = TextAnchor.MiddleCenter;
         layout.spacing = 18;
@@ -104,7 +111,7 @@ public sealed class MenuSoundSettings : MonoBehaviour
         title.rectTransform.sizeDelta = new Vector2(520, 60);
         VolumeControls.Add(box.transform);
         RuntimeUI.Button("Done", box.transform, "Done", new Vector2(220, 60), Toggle);
-        panel = box.gameObject;
+        panel = dim.gameObject;
         panel.SetActive(false);
     }
 

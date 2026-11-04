@@ -10,6 +10,7 @@ public class Brute : MonoBehaviour
     public float lifeTime = 30f;
     public float lives = 15;
     private SpriteRenderer spriteRenderer;
+    private bool stuck;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -26,13 +27,11 @@ public class Brute : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Pancakes")){
+        if (collision.gameObject.CompareTag("Pancakes") && !stuck){
 
             GameData.playerScore += 500;
             BattleFeedback.ScorePopup(transform.position + Vector3.up * 0.5f, "+500");
-            speed = 0;
-            GetComponent<BattlegroundAlienMotion>().Pancake();
-            spriteRenderer.color = new Color(0.4f, 0.075f, 0.075f, 1f); // Dark red color
+            StartCoroutine(StuckInSyrup());
 
         }
         if (collision.gameObject.CompareTag("Food"))
@@ -69,7 +68,24 @@ public class Brute : MonoBehaviour
     }
     public void TurnWhite()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = stuck ? StatusTint.BruteSyrup : Color.red;
         // GetComponent<SpriteRenderer>().color = Color.white;
     }
+
+    // Syrup holds the alien in place for a while, then wears off and it walks on.
+    private IEnumerator StuckInSyrup()
+    {
+        stuck = true;
+        float walkSpeed = speed;
+        speed = 0;
+        var motion = GetComponent<BattlegroundAlienMotion>();
+        motion.Pancake();
+        spriteRenderer.color = StatusTint.BruteSyrup;
+        yield return new WaitForSeconds(GameData.syrupStuckSeconds);
+        speed = walkSpeed;
+        stuck = false;
+        motion.EndPancake();
+        if (GameData.freeze) TurnBlue(); else TurnWhite();
+    }
+
 }

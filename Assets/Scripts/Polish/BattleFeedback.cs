@@ -6,6 +6,8 @@ public static class StatusTint
 {
     public static readonly Color Frozen = new Color(0.62f, 0.85f, 1f, 1f);
     public static readonly Color Burning = new Color(1f, 0.62f, 0.45f, 1f);
+    public static readonly Color Syrup = new Color(0.6f, 0.4f, 0.2f, 1f);
+    public static readonly Color BruteSyrup = new Color(0.4f, 0.075f, 0.075f, 1f);
 }
 
 // Hit, kill and score feedback for the battle scene. Render-only: no colliders or gameplay state.
