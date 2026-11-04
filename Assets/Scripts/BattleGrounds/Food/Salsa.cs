@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class Salsa : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, Health);
+    }
+
     private Vector2 Position;
     private float Health = 10;
     // private float duration = 20;
@@ -24,6 +29,7 @@ public class Salsa : MonoBehaviour
     public void TakeDamage(float damage)
     {
         Health -= damage;
+        if (damage > 0f) BattlegroundPlantHit.ReportDamage(gameObject, Health);
         if (Health <= 0)
         {
             Die();
