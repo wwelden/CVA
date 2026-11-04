@@ -40,6 +40,8 @@ public class Salsa : MonoBehaviour
     {
         GameData.BurnEM();
         GameData.burn = true;
+        GameData.burnRequests++;
+        GameAudio.Play(Sfx.Burn);
         GameData.salsaLocations.Remove(this);
         Destroy(gameObject);
     }
@@ -50,11 +52,11 @@ public class Salsa : MonoBehaviour
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

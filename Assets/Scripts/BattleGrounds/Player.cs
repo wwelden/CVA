@@ -175,6 +175,23 @@ public class Player : MonoBehaviour
         }
     }
 
+    public int GetSelectedCost()
+    {
+        if (selectedFood == null) return 0;
+        if (selectedFood.isSalad()) return saladCost;
+        if (selectedFood.isLasagna()) return lasagnaCost;
+        if (selectedFood.isPancakes()) return pancakesCost;
+        if (selectedFood.isPie()) return pieCost;
+        if (selectedFood.isIcecream()) return iceCreamCost;
+        if (selectedFood.isSalsa()) return salsaCost;
+        return 0;
+    }
+
+    public bool SelectedIsPie()
+    {
+        return selectedFood != null && selectedFood.isPie();
+    }
+
     public void SelectFood(int num)
     {
         selectedFood.SetFood(num);

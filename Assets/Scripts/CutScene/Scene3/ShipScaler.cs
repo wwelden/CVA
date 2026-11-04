@@ -36,7 +36,7 @@ public class ShipScaler : MonoBehaviour
         }
         if (ship.transform.position.x <= -6f)
         {
-            SceneManager.LoadScene("CutScene2");
+            SceneFader.Load("CutScene2");
         }
     }
 }

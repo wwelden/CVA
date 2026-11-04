@@ -12,7 +12,10 @@ public class AudioManager2 : MonoBehaviour
     public AudioClip background;
     public AudioClip laser; 
 
-    public bool playLaser; 
+    public bool playLaser;
+
+    public AudioSource LaserSource => laserSource;
+    private float laserBaseVolume = -1f;
 
 
     private void Start(){
@@ -23,6 +26,8 @@ public class AudioManager2 : MonoBehaviour
 
     void Update(){
         if(playLaser){
+            if (laserBaseVolume < 0f) laserBaseVolume = laserSource.volume;
+            laserSource.volume = laserBaseVolume * GameAudio.SfxVolume;
             laserSource.clip = laser;
             laserSource.Play();
             playLaser = false;

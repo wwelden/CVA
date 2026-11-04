@@ -43,6 +43,7 @@ public class knifeBehavior : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision){
+        if (foodOrder.Contains(collision.gameObject.tag)) GameAudio.Play(Sfx.Chop, 0.8f, 0.15f);
         if(collision.gameObject.CompareTag("Cabbage")){
             choppedCabbage++;
             Debug.Log("CHOPPED CABBAGE!!");
@@ -123,7 +124,7 @@ public class knifeBehavior : MonoBehaviour
     // public void GameOver(){
     //     PlayerPrefs.SetInt("inMinigame", 0);
     //     PlayerPrefs.SetInt("Veggie", foodCollected);
-    //     UnityEngine.SceneManagement.SceneManager.LoadScene("KitchenPrep");
+    //     UnityEngine.SceneManagement.SceneFader.Load("KitchenPrep");
     // }
 
 }

@@ -8,15 +8,15 @@ public class buttonScript : MonoBehaviour
 
     void Update(){
        if(Input.GetKeyDown(KeyCode.Escape)){
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
        }
     }
     public void StartGame(){
-          SceneManager.LoadScene("LasagnaMiniGame");
+          SceneFader.Load("LasagnaMiniGame");
     }
 
     public void ExitGame(){
-           SceneManager.LoadScene("KitchenPrep");
+           SceneFader.Load("KitchenPrep");
     }
     
 }

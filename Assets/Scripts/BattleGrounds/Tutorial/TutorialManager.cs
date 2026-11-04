@@ -40,7 +40,7 @@ public class TutorialManager : MonoBehaviour
 
     private void RedirectToGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneFader.Load("MainMenu");
     }
 
     IEnumerator TutorialText()

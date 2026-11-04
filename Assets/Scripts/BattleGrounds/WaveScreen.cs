@@ -21,8 +21,8 @@ public class WaveScreen : MonoBehaviour
     }
 
     public void GoToMenu(){
-        PlayerPrefs.DeleteAll(); // Not sure what this does
-        SceneManager.LoadScene("KitchenPrep");//SourceInput1
+        GameData.ClearPrepProgress(); // reset kitchen-prep results; keeps high score and volume
+        SceneFader.Load("KitchenPrep");//SourceInput1
     }
     void Update(){
         if (Input.GetKeyDown(KeyCode.L)){

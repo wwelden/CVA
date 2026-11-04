@@ -3,7 +3,7 @@ using UnityEngine;
 // Short, render-only splashes. No colliders, damage, or gameplay random calls.
 public sealed class BattlegroundFoodBurst : MonoBehaviour
 {
-    public enum Flavor { Tomato, Cream, Syrup }
+    public enum Flavor { Tomato, Cream, Syrup, Goo }
     private static Sprite dropletSprite;
     private readonly SpriteRenderer[] drops = new SpriteRenderer[10];
     private readonly Vector3[] velocities = new Vector3[10];
@@ -19,6 +19,8 @@ public sealed class BattlegroundFoodBurst : MonoBehaviour
         effect.transform.position = position;
         var burst = effect.AddComponent<BattlegroundFoodBurst>();
         burst.Initialize(source, flavor);
+        if (flavor == Flavor.Syrup) GameAudio.Play(Sfx.Syrup, 0.7f);
+        else if (flavor != Flavor.Goo) GameAudio.Play(Sfx.Splat, 0.55f, 0.12f);
     }
 
     private static Sprite DropletSprite
@@ -52,7 +54,8 @@ public sealed class BattlegroundFoodBurst : MonoBehaviour
     private void Initialize(SpriteRenderer source, Flavor flavor)
     {
         color = flavor == Flavor.Tomato ? new Color(1f, 0.22f, 0.08f) :
-            flavor == Flavor.Cream ? new Color(1f, 0.93f, 0.73f) : new Color(0.9f, 0.53f, 0.12f);
+            flavor == Flavor.Cream ? new Color(1f, 0.93f, 0.73f) :
+            flavor == Flavor.Goo ? new Color(0.35f, 0.85f, 0.75f) : new Color(0.9f, 0.53f, 0.12f);
         float width = Mathf.Max(source.bounds.size.x, source.bounds.size.y);
         float radius = Mathf.Clamp(width * 0.6f, 0.3f, 0.85f);
         for (int i = 0; i < drops.Length; i++)

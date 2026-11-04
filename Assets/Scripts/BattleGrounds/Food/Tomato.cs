@@ -60,12 +60,12 @@ public class Tomato : MonoBehaviour
     this.speed = speed;
   }
   public void TurnBlue(){
-    GetComponent<SpriteRenderer>().color = Color.blue;
+    GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
   }
   public void TurnWhite(){
     GetComponent<SpriteRenderer>().color = Color.white;
   }
   public void TurnRed(){
-    GetComponent<SpriteRenderer>().color = Color.red;
+    GetComponent<SpriteRenderer>().color = StatusTint.Burning;
   }
 }

@@ -27,27 +27,27 @@ public class GameSelector : MonoBehaviour
     // }
     public void BattleGround()
     {
-        SceneManager.LoadScene("Kitchen");
+        SceneFader.Load("Kitchen");
     }
     public void Menu()
     {
-        SceneManager.LoadScene("GameSelector");
+        SceneFader.Load("GameSelector");
     }
     public void Lasanga()
     {
-        SceneManager.LoadScene("LasagnaStartGame");
+        SceneFader.Load("LasagnaStartGame");
     }
     public void Pizza()
     {
-        SceneManager.LoadScene("Pizza");
+        SceneFader.Load("Pizza");
     }
     public void ChopVeggies()
     {
-        SceneManager.LoadScene("SaladGame");
+        SceneFader.Load("SaladGame");
     }
     public void Oven()
     {
-        SceneManager.LoadScene("OvenMinigame");
+        SceneFader.Load("OvenMinigame");
     }
     
 

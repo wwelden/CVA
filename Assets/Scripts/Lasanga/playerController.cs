@@ -30,7 +30,7 @@ public class playerController : MonoBehaviour
     }
 
     public void FixedUpdate(){
-       rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+       rb.linearVelocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
 
        if(Input.GetKey("right") || Input.GetKey(KeyCode.D)){
         this.GetComponent<SpriteRenderer>().flipX = false;
@@ -57,13 +57,13 @@ public class playerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Lasagna"){
-            SceneManager.LoadScene("LasagnaStartGame");
+            SceneFader.Load("LasagnaStartGame");
         }
         else if (other.tag == "Oven"){
-          SceneManager.LoadScene("OvenStart");
+          SceneFader.Load("OvenStart");
         }
         else if (other.tag == "Veggies"){
-           SceneManager.LoadScene("VeggieStart");
+           SceneFader.Load("VeggieStart");
         }
     }
     

@@ -59,6 +59,7 @@ public class SliderScript : MonoBehaviour
         clicked = true;
         //texting.IncreaseScore(1);
         Debug.Log("Clicked");
+        GameAudio.Play(barstatus == "Good" ? Sfx.Catch : barstatus == "Bad" ? Sfx.Error : Sfx.Click, 0.8f, 0f);
         if(barstatus == "Good"){
             texting.IncreaseScore(level);
             barScripts.LevelUp();

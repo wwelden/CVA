@@ -6,16 +6,16 @@ public class controlButtons : MonoBehaviour
 {
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
        }
     }
     public void StartGame(){
-        SceneManager.LoadScene("OvenMinigame");
+        SceneFader.Load("OvenMinigame");
 
     }
 
      public void ExitScreen(){
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
 
     }
    

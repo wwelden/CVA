@@ -45,6 +45,6 @@ public class Stars : MonoBehaviour
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(15f);
-        SceneManager.LoadScene("CutScene1");
+        SceneFader.Load("CutScene1");
     }
 }

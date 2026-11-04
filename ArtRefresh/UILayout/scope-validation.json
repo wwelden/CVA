@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "scene": "MainMenu",
+      "preservedGameplayAndArtComponents": 20
+    },
+    {
+      "scene": "LasagnaMiniGame",
+      "preservedGameplayAndArtComponents": 27
+    },
+    {
+      "scene": "LasagnaStartGame",
+      "preservedGameplayAndArtComponents": 14
+    },
+    {
+      "scene": "OvenStart",
+      "preservedGameplayAndArtComponents": 9
+    },
+    {
+      "scene": "OvenMinigame",
+      "preservedGameplayAndArtComponents": 49
+    },
+    {
+      "scene": "VeggieStart",
+      "preservedGameplayAndArtComponents": 9
+    },
+    {
+      "scene": "SaladGame",
+      "preservedGameplayAndArtComponents": 26
+    }
+  ],
+  "buttonCallbacksPreserved": true
+}

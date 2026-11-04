@@ -5,7 +5,7 @@ using UnityEngine;
 public class clearPlayerPref : MonoBehaviour
 {
     public void Awake(){
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
+        // Reset kitchen-prep progress for a fresh run, but keep the saved high score and volume.
+        GameData.ClearPrepProgress();
     }
 }

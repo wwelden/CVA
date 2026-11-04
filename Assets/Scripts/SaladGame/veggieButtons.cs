@@ -7,15 +7,15 @@ public class veggieButtons : MonoBehaviour
 {
    
    public void StartGame(){
-    SceneManager.LoadScene("SaladGame");
+    SceneFader.Load("SaladGame");
    }
    
     public void ExitGame(){
-    SceneManager.LoadScene("KitchenPrep");
+    SceneFader.Load("KitchenPrep");
    }
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
        }
     }
 }

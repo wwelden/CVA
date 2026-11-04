@@ -1,0 +1,25 @@
+PASS: 24 runtime checks
+Play mode frames advance
+Enemy has active visual child and hidden source
+Brute has active visual child and hidden source
+Shooter has active visual child and hidden source
+Enemy gait advances
+Brute gait advances
+Enemy physics root scale unchanged
+Enemy source sprite follows Animator
+Brute physics root scale unchanged
+Brute source sprite follows Animator
+Shooter physics root scale unchanged
+Shooter source sprite follows Animator
+Walk freezes while paused
+Status tint reaches visual child
+Repeated pancake calls do not duplicate splashes
+Enemy holds flattened pancake pose
+Enemy pancake leaves root scale unchanged
+Brute holds flattened pancake pose
+Brute pancake leaves root scale unchanged
+Shooter holds flattened pancake pose
+Shooter pancake leaves root scale unchanged
+Splashes clean up after lifetime
+Disabling motion restores original renderer
+Re-enabling motion restores visual child

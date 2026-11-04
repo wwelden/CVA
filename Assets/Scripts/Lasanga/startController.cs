@@ -22,7 +22,7 @@ public class startController : MonoBehaviour
     // Update is called once per frame
     public void StartGame()
     {
-        SceneManager.LoadScene("CutScene");
+        SceneFader.Load("CutScene");
     }
     public void OpenRules()
     {
@@ -34,7 +34,7 @@ public class startController : MonoBehaviour
     }
     public void StartTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneFader.Load("Tutorial");
     }
     void Update()
     {

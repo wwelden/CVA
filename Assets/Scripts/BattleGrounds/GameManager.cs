@@ -40,8 +40,28 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI fastForwardButtonText;
     public GameObject progressBar;
 
+    private int seenFreezeRequests;
+    private int seenBurnRequests;
+    private Coroutine freezeRoutine;
+    private Coroutine burnRoutine;
+    private Coroutine reservesShake;
+    private PauseMenu pauseMenu;
+    private int waveStartReserves;
+    private int waveStartScore;
+
     void Start()
     {
+        seenFreezeRequests = GameData.freezeRequests;
+        seenBurnRequests = GameData.burnRequests;
+        waveStartReserves = GameData.globalFoodReserves;
+        waveStartScore = GameData.playerScore;
+        // Tutorials reuse this manager; the pause menu and wave card are for the real battle only.
+        if (SceneManager.GetActiveScene().name == "Kitchen")
+        {
+            pauseMenu = PauseMenu.Create(this);
+            WaveBanner.ShowForWave(GameData.waveNumber);
+        }
+
         // Music music = FindObjectOfType<Music>();
         // music.StopMusic();
         // Destroy(music.gameObject);
@@ -79,9 +99,13 @@ public class GameManager : MonoBehaviour
 
     private void KeyLogic()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PointerOverUI())
         {
             SpawnFood();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -147,10 +171,15 @@ public class GameManager : MonoBehaviour
 
     private void CheckFreeze()
     {
-        if (GameData.freeze)
+        // Start (or restart) the freeze once per ice cream instead of once per frame.
+        if (GameData.freezeRequests != seenFreezeRequests)
         {
-            StartCoroutine(ResetTimeScale(5));
+            seenFreezeRequests = GameData.freezeRequests;
+            if (freezeRoutine != null) StopCoroutine(freezeRoutine);
+            freezeRoutine = StartCoroutine(ResetTimeScale(5));
         }
+        // Food placed during the freeze still picks up the frozen tint.
+        if (GameData.freeze) GameData.TurnAllBlue();
     }
     IEnumerator DisableBurn()
     {
@@ -168,11 +197,21 @@ public class GameManager : MonoBehaviour
     }
     private void CheckBurn()
     {
-        if (GameData.burn)
+        // Start (or restart) the 20s burn once per salsa instead of once per frame.
+        if (GameData.burnRequests != seenBurnRequests)
         {
-            GameData.BurnEM();
-            StartCoroutine(DisableBurn());
+            seenBurnRequests = GameData.burnRequests;
+            if (burnRoutine != null) StopCoroutine(burnRoutine);
+            burnRoutine = StartCoroutine(DisableBurn());
         }
+        // Keep newly thrown tomatoes and new food in the burn state while it lasts.
+        if (GameData.burn) GameData.BurnEM();
+    }
+
+    private static bool PointerOverUI()
+    {
+        return UnityEngine.EventSystems.EventSystem.current != null &&
+            UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
     }
 
     private void SpawnFood()
@@ -197,13 +236,18 @@ public class GameManager : MonoBehaviour
                 {
                     return;
                 }
-                else if (GameData.globalFoodReserves > 0)
+                else if (GameData.globalFoodReserves >= player.GetSelectedCost())
                 {
-                    GameData.globalFoodReserves -= player.PlaceFood(worldPosition);
+                    int spent = player.PlaceFood(worldPosition);
+                    GameData.globalFoodReserves -= spent;
+                    if (spent > 0)
+                    {
+                        GameAudio.Play(player.SelectedIsPie() ? Sfx.Throw : Sfx.Place, 0.8f);
+                    }
                 }
                 else
                 {
-                    return;
+                    NotEnoughFood();
                 }
             }
 
@@ -289,6 +333,7 @@ public class GameManager : MonoBehaviour
             {
                 pauseButtonText.text = "Pause";
             }
+            GameAudio.Play(Sfx.Unpause, 0.7f, 0f);
         }
         else
         {
@@ -298,7 +343,68 @@ public class GameManager : MonoBehaviour
             {
                 pauseButtonText.text = "Resume";
             }
+            GameAudio.Play(Sfx.Pause, 0.7f, 0f);
         }
+        if (pauseMenu != null) pauseMenu.SetVisible(paused);
+    }
+
+    // Pause-menu actions.
+    public void RestartWave()
+    {
+        GameData.globalFoodReserves = waveStartReserves;
+        GameData.playerScore = waveStartScore;
+        LeaveBattle();
+        SceneFader.Load("Kitchen");
+    }
+
+    public void QuitToMenu()
+    {
+        GameData.RecordHighScore();
+        LeaveBattle();
+        GameData.ResetGame();
+        GameData.ClearPrepProgress();
+        SceneFader.Load("MainMenu");
+    }
+
+    private void LeaveBattle()
+    {
+        GameData.freeze = false;
+        GameData.burn = false;
+        GameData.isFast = false;
+        GameData.paused = false;
+        GameData.globalTimeScale = GameData.regularTime;
+        Time.timeScale = 1f;
+    }
+
+    private void NotEnoughFood()
+    {
+        GameAudio.Play(Sfx.Error, 0.7f, 0f);
+        if (foodReservesText == null) return;
+        if (reservesShake != null) StopCoroutine(reservesShake);
+        reservesShake = StartCoroutine(ShakeReserves());
+    }
+
+    private IEnumerator ShakeReserves()
+    {
+        RectTransform rect = foodReservesText.rectTransform;
+        Vector2 rest = rect.anchoredPosition;
+        Vector3 restScale = rect.localScale;
+        Color normal = foodReservesText.color;
+        Color warn = new Color(0.9f, 0.15f, 0.1f, 1f);
+        const float duration = 0.4f;
+        for (float t = 0f; t < duration; t += Time.unscaledDeltaTime)
+        {
+            float k = 1f - t / duration;
+            rect.anchoredPosition = rest + Vector2.right * Mathf.Sin(t * 70f) * 9f * k;
+            rect.localScale = restScale * (1f + 0.12f * k);
+            // Coroutines resume after Update, so this wins over the per-frame color reset.
+            foodReservesText.color = Color.Lerp(normal, warn, k);
+            yield return null;
+        }
+        rect.anchoredPosition = rest;
+        rect.localScale = restScale;
+        foodReservesText.color = normal;
+        reservesShake = null;
     }
     public void ToggleFastForward()
     {
