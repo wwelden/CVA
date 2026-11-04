@@ -32,8 +32,14 @@ public class plateMovement : MonoBehaviour
         PlayerPrefs.SetInt("inMinigame", 1);
         mainCamera = Camera.main;
     }
+    private int heardStackCount = -1;
+
     public void Update()
     {
+        // Every ingredient that lands on the stack gets a catch sound, whichever script added it.
+        if (stack != null && heardStackCount >= 0 && stack.Count > heardStackCount) GameAudio.Play(Sfx.Catch, 0.7f);
+        if (stack != null) heardStackCount = stack.Count;
+
         if (!GameObject.FindGameObjectWithTag("Timer").GetComponent<timer>().gameOver)
         {
             time -= Time.deltaTime;

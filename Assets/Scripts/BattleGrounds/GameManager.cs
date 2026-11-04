@@ -55,8 +55,12 @@ public class GameManager : MonoBehaviour
         seenBurnRequests = GameData.burnRequests;
         waveStartReserves = GameData.globalFoodReserves;
         waveStartScore = GameData.playerScore;
-        pauseMenu = PauseMenu.Create(this);
-        WaveBanner.ShowForWave(GameData.waveNumber);
+        // Tutorials reuse this manager; the pause menu and wave card are for the real battle only.
+        if (SceneManager.GetActiveScene().name == "Kitchen")
+        {
+            pauseMenu = PauseMenu.Create(this);
+            WaveBanner.ShowForWave(GameData.waveNumber);
+        }
 
         // Music music = FindObjectOfType<Music>();
         // music.StopMusic();

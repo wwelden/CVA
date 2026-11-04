@@ -94,10 +94,10 @@ public sealed class GameAudio : MonoBehaviour
         foreach (var key in stale) musicBaseVolume.Remove(key);
 
         var laserSources = new HashSet<AudioSource>();
-        foreach (var manager in FindObjectsByType<AudioManager2>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (var manager in FindObjectsByType<AudioManager2>(FindObjectsInactive.Include))
             if (manager.LaserSource != null) laserSources.Add(manager.LaserSource);
 
-        foreach (var source in FindObjectsByType<AudioSource>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (var source in FindObjectsByType<AudioSource>(FindObjectsInactive.Include))
         {
             if (pool.Contains(source) || laserSources.Contains(source)) continue;
             if (!musicBaseVolume.ContainsKey(source)) musicBaseVolume[source] = source.volume;
@@ -106,7 +106,7 @@ public sealed class GameAudio : MonoBehaviour
 
     public static void AddButtonClicks()
     {
-        foreach (var button in FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (var button in FindObjectsByType<Button>(FindObjectsInactive.Include))
             AddClick(button);
     }
 
