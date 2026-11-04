@@ -14,7 +14,7 @@ public class Background : MonoBehaviour
         ship.transform.Translate(Vector3.right * speed);
         if (background2.transform.position.x >= 0)
         {
-            SceneManager.LoadScene("WaveScreen");
+            SceneFader.Load("WaveScreen");
         }
 
     }

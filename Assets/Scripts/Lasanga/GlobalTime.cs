@@ -44,7 +44,7 @@ public class GlobalTime : MonoBehaviour
     }
 
     public void EndPrep(){
-       SceneManager.LoadScene("EndPrepTime");
+       SceneFader.Load("EndPrepTime");
     }
 
 }

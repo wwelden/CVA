@@ -7,7 +7,7 @@ public class SceneJumper : MonoBehaviour
 
     void Start()
     {
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
         
     }
 

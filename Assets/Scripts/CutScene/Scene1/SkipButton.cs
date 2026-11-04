@@ -19,6 +19,6 @@ public class SkipButton : MonoBehaviour
         music.StopMusic();
         Source source = FindObjectOfType<Source>();
         Destroy(source.gameObject);
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
     }
 }

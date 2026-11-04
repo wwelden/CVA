@@ -26,7 +26,7 @@ public class ShipExplosion : MonoBehaviour
             }
             Destroy(gameObject);
             Instantiate(brokenShipPrefab, transform.position, transform.rotation);
-            SceneManager.LoadScene("CutScene3");
+            SceneFader.Load("CutScene3");
         }
         
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

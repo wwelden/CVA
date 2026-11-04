@@ -101,12 +101,13 @@ public class EnemySpawner : MonoBehaviour
         if (waveTime <= 0)
         {
             endSpawning();
-            if (AllEnemiesDead())
+            // The fade keeps this scene running for a moment; only advance the wave once.
+            if (AllEnemiesDead() && !SceneFader.IsTransitioning)
             {
                 GameData.waveNumber++;
                 GameData.playerScore += 1000;
                 GameData.isFast = false;
-                SceneManager.LoadScene("WaveTransition");
+                SceneFader.Load("WaveTransition");
             }
         }
 

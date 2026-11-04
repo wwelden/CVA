@@ -20,7 +20,7 @@ public class OffScreen : MonoBehaviour
         int totalSalad = PlayerPrefs.GetInt("Veggie");
         int saladMade = knife.GetComponent<knifeBehavior>().foodCollected + totalSalad;
         PlayerPrefs.SetInt("Veggie", saladMade);
-        SceneManager.LoadScene("KitchenPrep");
+        SceneFader.Load("KitchenPrep");
     }
 
     void OnCollisionEnter2D(Collision2D collision){

@@ -51,7 +51,7 @@ public class WaveTransition : MonoBehaviour
         alien2.transform.Translate(Vector3.right * speed);
         alien3.transform.Translate(Vector3.right * speed);
         if (background2.transform.position.x >= 0){
-            SceneManager.LoadScene("WaveScreen");
+            SceneFader.Load("WaveScreen");
         }
 
     }

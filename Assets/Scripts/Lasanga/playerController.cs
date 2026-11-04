@@ -57,13 +57,13 @@ public class playerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Lasagna"){
-            SceneManager.LoadScene("LasagnaStartGame");
+            SceneFader.Load("LasagnaStartGame");
         }
         else if (other.tag == "Oven"){
-          SceneManager.LoadScene("OvenStart");
+          SceneFader.Load("OvenStart");
         }
         else if (other.tag == "Veggies"){
-           SceneManager.LoadScene("VeggieStart");
+           SceneFader.Load("VeggieStart");
         }
     }
     

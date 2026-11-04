@@ -77,7 +77,7 @@ public class timer : MonoBehaviour {
 
      public void MainMenu(){
          Debug.Log("startGame");
-         SceneManager.LoadScene("KitchenPrep");
+         SceneFader.Load("KitchenPrep");
         }
     }
 

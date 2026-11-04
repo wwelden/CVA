@@ -25,12 +25,12 @@ public class VeggieTimer : MonoBehaviour
             timerText.text = countdown.ToString().Split('.')[0];
         }
 
-        if (countdown < 0){
+        if (countdown < 0 && !SceneFader.IsTransitioning){
            PlayerPrefs.SetInt("inMinigame", 0);
            int totalSalad = PlayerPrefs.GetInt("Veggie");
            int saladMade = knife.GetComponent<knifeBehavior>().foodCollected + totalSalad;
            PlayerPrefs.SetInt("Veggie", saladMade);
-           SceneManager.LoadScene("KitchenPrep");
+           SceneFader.Load("KitchenPrep");
     }
 }
 }
