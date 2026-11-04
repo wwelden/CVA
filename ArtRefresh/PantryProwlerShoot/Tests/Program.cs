@@ -61,10 +61,34 @@ static class Program
         miss.transform.position=new Vector3(11,0,0);Call(miss,"Update");Check(UnityEngine.Object.Shots.Count==0,"Offscreen expiry does not burst");
         var oldObject=new GameObject();var oldShot=oldObject.Add<AlienShot>();oldShot.shot=oldObject;
         UnityEngine.Object.Destroyed.Clear();Call(oldShot,"OnTriggerEnter2D",food);Check(UnityEngine.Object.Destroyed.Count==1,"Missing optional VFX still consumes shot");
+        foreach (var type in new[] {typeof(Salad), typeof(Lasagna), typeof(IceCream), typeof(Salsa)})
+        {
+            var target = new GameObject(); var receiver = target.Add(type) as DamageReceiver;
+            var collider = target.Add<Collider2D>();
+            var beamObject = new GameObject(); var beam = beamObject.Add<AlienShot>();
+            var beamCollider = beamObject.Add<Collider2D>();
+            Call(beam, "OnTriggerEnter2D", collider); Call(beam, "OnTriggerEnter2D", collider);
+            Check(receiver.damage == (type == typeof(Lasagna) ? 2f : 1f), type.Name + " takes one projectile damage application");
+            Check(!beamCollider.enabled, "Projectile stops collision callbacks before damage");
+        }
+        var piercing = new GameObject(); var pie = piercing.Add<Pie>();
+        var pieBeamObject = new GameObject(); var pieBeam = pieBeamObject.Add<AlienShot>();
+        Call(pieBeam, "OnTriggerEnter2D", piercing.Add<Collider2D>());
+        Check(pie.hits == 1, "Projectile uses the shared pie hit method");
+        var tomatoObject = new GameObject(); var tomato = tomatoObject.Add<Tomato>();
+        var tomatoBeamObject = new GameObject(); var tomatoBeam = tomatoBeamObject.Add<AlienShot>();
+        Call(tomatoBeam, "OnTriggerEnter2D", tomatoObject.Add<Collider2D>());
+        Check(tomato.hits == 1, "Projectile uses the shared tomato hit method");
         Console.WriteLine($"Passed {checks} assertions against actual Shooter, animation bridge and AlienShot source using lightweight Unity API stubs. Not a Unity engine playtest.");
     }
 }
 public static class GameData { public static float playerScore,highScore; public static List<Shooter> shooters=new(); }
+public class DamageReceiver:MonoBehaviour { public float damage; public void TakeDamage(float amount) { damage += amount; } }
+public class Salad:DamageReceiver {} public class Lasagna:DamageReceiver {} public class IceCream:DamageReceiver {} public class Salsa:DamageReceiver {}
+public class Pancakes:MonoBehaviour { public void Die() {} }
+public class Pie:MonoBehaviour { public int hits; public void TakeHit() { hits++; } }
+public class Tomato:MonoBehaviour { public int hits; public void TakeHit() { hits++; } }
+public static class BattlegroundPlantHit { public static void Flash(GameObject target) {} }
 public class AudioManager2:MonoBehaviour { public bool playLaser; }
 namespace UnityEngine
 {
@@ -79,10 +103,12 @@ namespace UnityEngine
     {
         readonly Dictionary<Type,Component> components=new(); public string tag; public bool activeSelf=true; public Transform transform=new();public GameObject gameObject=>this;
         public T Add<T>() where T:Component,new(){var c=new T{gameObject=this};components[typeof(T)]=c;return c;}
+        public Component Add(Type type){var c=(Component)Activator.CreateInstance(type);c.gameObject=this;components[type]=c;return c;}
+        public T[] GetComponentsInChildren<T>() where T:Component => components.Values.OfType<T>().ToArray();
         public T GetComponent<T>() where T:Component => components.TryGetValue(typeof(T),out var c)?(T)c:null;
         public bool CompareTag(string t)=>tag==t;public static GameObject AudioManager;public static GameObject FindGameObjectWithTag(string t)=>AudioManager;
     }
-    public class Component:Object { public GameObject gameObject;public Transform transform=>gameObject.transform;public T GetComponent<T>() where T:Component=>gameObject.GetComponent<T>(); }
+    public class Component:Object { public bool CompareTag(string tag)=>gameObject.CompareTag(tag); public T GetComponentInParent<T>() where T:Component=>gameObject.GetComponent<T>(); public T[] GetComponentsInChildren<T>() where T:Component=>gameObject.GetComponentsInChildren<T>(); public GameObject gameObject;public Transform transform=>gameObject.transform;public T GetComponent<T>() where T:Component=>gameObject.GetComponent<T>(); }
     public class MonoBehaviour:Component
     {
         public bool enabled=true; public bool isActiveAndEnabled=>enabled&&gameObject.activeSelf;public List<IEnumerator> routines=new();
@@ -91,7 +117,7 @@ namespace UnityEngine
     public class Animator:Component { readonly Dictionary<int,bool> values=new();public static int StringToHash(string s)=>s.GetHashCode();public void SetBool(int id,bool value)=>values[id]=value;public bool GetBool(string s)=>values.TryGetValue(StringToHash(s),out var v)&&v; }
     public class SpriteRenderer:Component {public Color color;}
     public class Rigidbody2D:Component {public Vector2 velocity;}
-    public class Collider2D:Component{}
+    public class Collider2D:Component{public bool enabled=true;}
     public class Collision2D {public GameObject gameObject;}
     public class WaitForSeconds {public float seconds;public WaitForSeconds(float value){seconds=value;}}
     public class Transform {public Vector3 position;public Quaternion rotation;public void Translate(Vector2 v){}public Vector3 TransformPoint(Vector3 v)=>new(position.x+v.x*.34129742f,position.y+v.y*.34129742f,position.z+v.z);}
