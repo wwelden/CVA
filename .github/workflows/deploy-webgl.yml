@@ -14,6 +14,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 # A newer push supersedes a build that's still running.
 concurrency:
   group: deploy-webgl
@@ -24,9 +27,25 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
+      - name: Check deployment credentials
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          missing=0
+          for name in UNITY_LICENSE UNITY_EMAIL UNITY_PASSWORD VERCEL_TOKEN; do
+            if [[ -z "${!name}" ]]; then
+              echo "::error::Missing repository secret: $name. See DEPLOYMENT.md."
+              missing=1
+            fi
+          done
+          exit "$missing"
+
       # The Unity editor image plus the Library import outgrow the default runner disk.
       - name: Free disk space
-        uses: jlumbroso/free-disk-space@v1.3.1
+        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
         with:
           tool-cache: false
           android: true
@@ -35,10 +54,12 @@ jobs:
           large-packages: false
           swap-storage: false
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
 
       # Reusing the imported Library cuts later builds from ~40 to ~15 minutes.
-      - uses: actions/cache@v4
+      - uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
           path: Library
           key: Library-WebGL-${{ hashFiles('Packages/packages-lock.json', 'ProjectSettings/ProjectVersion.txt') }}
@@ -46,7 +67,7 @@ jobs:
 
       # Runs WebGLBuild.Build, which writes Builds/WebGL (including its vercel.json).
       - name: Build WebGL player
-        uses: game-ci/unity-builder@v4
+        uses: game-ci/unity-builder@4423ee75828dff56037d1d1cfdac6b68e3a6ba00 # v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -61,11 +82,11 @@ jobs:
       - name: Take ownership of build output
         run: sudo chown -R "$(id -u):$(id -g)" Builds
 
-      - uses: oven-sh/setup-bun@v2
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
 
       - name: Deploy to Vercel production
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: team_gKkroO4XiWdxmxF0cBs6LLl5
           VERCEL_PROJECT_ID: prj_uizfR8NZJUbhbLFyb67qBJoCWBrp
-        run: bunx vercel@64.1.0 deploy Builds/WebGL --prod --yes --token "$VERCEL_TOKEN"
+        run: bunx vercel@64.1.0 deploy Builds/WebGL --prod --yes
