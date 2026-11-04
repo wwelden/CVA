@@ -10,6 +10,10 @@ public sealed class WebGLBranding : IPostprocessBuildWithReport
 {
     public int callbackOrder => 100;
 
+    // Shown on the browser tab and when installed as an app. PlayerSettings.productName
+    // stays "TheFirstOne" so existing players' saved data isn't orphaned.
+    const string Title = "Chefs vs Aliens";
+
     public void OnPostprocessBuild(BuildReport report)
     {
         if (report.summary.platform == BuildTarget.WebGL)
@@ -28,6 +32,7 @@ public sealed class WebGLBranding : IPostprocessBuildWithReport
 
         var indexPath = Path.Combine(outputPath, "index.html");
         var html = File.ReadAllText(indexPath);
+        html = Regex.Replace(html, @"<title>[^<]*</title>", "<title>" + Title + "</title>", RegexOptions.IgnoreCase);
         // Distinct PNG filenames bypass the browser's cached Unity favicon.
         html = Regex.Replace(html, @"\s*<link\b[^>]*\brel=""(?:shortcut icon|icon|apple-touch-icon)""[^>]*>", "", RegexOptions.IgnoreCase);
         const string links = "    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"TemplateData/cva-alien-chef-16.png\">\n"
@@ -43,6 +48,7 @@ public sealed class WebGLBranding : IPostprocessBuildWithReport
             const string icons = "\"icons\": ["
                 + "{\"src\":\"TemplateData/cva-alien-chef-192.png\",\"sizes\":\"192x192\",\"type\":\"image/png\",\"purpose\":\"any\"},"
                 + "{\"src\":\"TemplateData/cva-alien-chef-512.png\",\"sizes\":\"512x512\",\"type\":\"image/png\",\"purpose\":\"any\"}]";
+            manifest = Regex.Replace(manifest, @"""(name|short_name)""\s*:\s*""[^""]*""", m => $"\"{m.Groups[1].Value}\": \"{Title}\"");
             manifest = Regex.Replace(manifest, @"""icons""\s*:\s*\[[\s\S]*?\]", icons);
             File.WriteAllText(manifestPath, manifest);
         }
