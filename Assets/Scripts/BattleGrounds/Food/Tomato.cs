@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Tomato : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, lives);
+    }
+
   public float speed = 1;
   public int hp;
 
@@ -12,6 +17,7 @@ public class Tomato : MonoBehaviour
   public Vector2 Target;
   public Vector2 Position;
   public int lives = 1;
+  private bool consumed;
   public int GetDamage(){
     return damage;
   }
@@ -34,26 +40,32 @@ public class Tomato : MonoBehaviour
 
   void OnCollisionEnter2D(Collision2D collision)
   {
-      if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Shot"))
+      if (collision.gameObject.CompareTag("Enemy")) TakeHit();
+  }
+
+  public void TakeHit()
+  {
+      if (consumed) return;
+      lives--;
+      BattlegroundPlantHit.ReportDamage(gameObject, lives);
+      if (lives <= 0)
       {
-          lives--;
-          if (lives <= 0)
-          {
-              GameData.tomatos.Remove(this);
-              Destroy(gameObject);
-          }
+          consumed = true;
+          BattlegroundFoodBurst.Spawn(transform.position, GetComponent<SpriteRenderer>(), BattlegroundFoodBurst.Flavor.Tomato);
+          GameData.tomatos.Remove(this);
+          Destroy(gameObject);
       }
   }
   public void SetSpeed(float speed){
     this.speed = speed;
   }
   public void TurnBlue(){
-    GetComponent<SpriteRenderer>().color = Color.blue;
+    GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
   }
   public void TurnWhite(){
     GetComponent<SpriteRenderer>().color = Color.white;
   }
   public void TurnRed(){
-    GetComponent<SpriteRenderer>().color = Color.red;
+    GetComponent<SpriteRenderer>().color = StatusTint.Burning;
   }
 }

@@ -16,6 +16,7 @@ public class Brute : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        BattlegroundAlienMotion.Attach(gameObject);
     }
 
     void Update()
@@ -28,7 +29,9 @@ public class Brute : MonoBehaviour
         if (collision.gameObject.CompareTag("Pancakes")){
 
             GameData.playerScore += 500;
+            BattleFeedback.ScorePopup(transform.position + Vector3.up * 0.5f, "+500");
             speed = 0;
+            GetComponent<BattlegroundAlienMotion>().Pancake();
             spriteRenderer.color = new Color(0.4f, 0.075f, 0.075f, 1f); // Dark red color
 
         }
@@ -39,7 +42,12 @@ public class Brute : MonoBehaviour
             {
                 GameData.playerScore += 500;
                 GameData.brutes.Remove(this);
+                BattleFeedback.AlienKilled(gameObject, 500, true);
                 Destroy(gameObject);
+            }
+            else
+            {
+                BattleFeedback.AlienHit(gameObject);
             }
         }
         else if (collision.gameObject.CompareTag("GameEnd"))
@@ -50,15 +58,14 @@ public class Brute : MonoBehaviour
 
     public void GameOver()
     {
-        rb.velocity = Vector2.zero;
-        if(GameData.playerScore > GameData.highScore){
-            GameData.highScore = GameData.playerScore;
-        }
-        SceneManager.LoadScene("GameOver");
+        rb.linearVelocity = Vector2.zero;
+        GameData.RecordHighScore();
+        SceneFader.Load("GameOver");
     }
-    public void TurnBlue() //colors need to be adjusted
+    public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        // The brute's normal look is its red prefab tint, so frozen is a purple-blue blend of the two.
+        GetComponent<SpriteRenderer>().color = new Color(0.55f, 0.45f, 1f, 1f);
     }
     public void TurnWhite()
     {

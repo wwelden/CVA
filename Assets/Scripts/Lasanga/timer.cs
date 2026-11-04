@@ -44,7 +44,7 @@ public class timer : MonoBehaviour {
           int oldTot = PlayerPrefs.GetInt("Lasagna");
           int newTot = oldTot + earnedMonsters;
           PlayerPrefs.SetInt("Lasagna", newTot);
-          winPanelText.text = $"You earned {earnedMonsters} lasagna monsters! ";
+          winPanelText.text = $"You earned {earnedMonsters} Food Reserves!";
           PlayerPrefs.SetInt("inMinigame", 0);
           Invoke("MainMenu", 3f);
         }
@@ -70,7 +70,7 @@ public class timer : MonoBehaviour {
           int oldTot = PlayerPrefs.GetInt("Lasagna");
           int newTot = oldTot + earnedMonsters;
           PlayerPrefs.SetInt("Lasagna", newTot);
-          loseText.text = $"You earned {earnedMonsters} lasagna monsters.";
+          loseText.text = $"You earned {earnedMonsters} Food Reserves.";
           PlayerPrefs.SetInt("inMinigame", 0);
           Invoke("MainMenu", 3f);
         }

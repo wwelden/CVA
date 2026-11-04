@@ -3,8 +3,35 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 public static class GameData
 {
+    private const string HighScoreKey = "cva.highScore";
     public static int highScore;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void LoadSavedHighScore()
+    {
+        highScore = PlayerPrefs.GetInt(HighScoreKey, 0);
+    }
     public static int playerScore;
+
+    // Bumped each time an ice cream / salsa is eaten, so GameManager starts the effect exactly once.
+    public static int freezeRequests;
+    public static int burnRequests;
+
+    public static void RecordHighScore()
+    {
+        if (playerScore <= highScore) return;
+        highScore = playerScore;
+        PlayerPrefs.SetInt(HighScoreKey, highScore);
+        PlayerPrefs.Save();
+    }
+
+    // Clears the kitchen-prep minigame results without touching the high score or volume settings.
+    public static void ClearPrepProgress()
+    {
+        foreach (string key in new[] { "Timer", "Lasagna", "Pie", "Veggie", "inMinigame" })
+            PlayerPrefs.DeleteKey(key);
+        PlayerPrefs.Save();
+    }
     public static int waveNumber = 1;
     public static int globalFoodReserves = 500;
     public static float globalWaveTime = 120f;
@@ -68,7 +95,7 @@ public static class GameData
     public static void SkipKitchenPrep()
     {
         globalFoodReserves += 300;
-        SceneManager.LoadScene("Kitchen");
+        SceneFader.Load("Kitchen");
     }
 
 
@@ -291,14 +318,12 @@ public static class GameData
     public static void BurnEM()
     {
         TurnAllRed();
-        foreach (Salad salad in saladLocations)
+        // Salad.SetTimeScale multiplies its throw delay, so calling it while burning kept
+        // compounding; it only ever affected salads placed mid-burn (crippling them). Tomatoes
+        // still fly at burn speed.
+        foreach (Tomato tomato in tomatos)
         {
-            // salad.TurnRed();
-            salad.SetTimeScale(10f);
-            foreach (Tomato tomato in tomatos)
-            {
-                tomato.SetSpeed(10f);
-            }
+            tomato.SetSpeed(10f);
         }
 
     }

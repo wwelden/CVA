@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class IceCream : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, Health);
+    }
+
     private Vector2 Position;
     private float Health = 10;
     // private float duration = 20;
@@ -24,6 +29,7 @@ public class IceCream : MonoBehaviour
     public void TakeDamage(float damage)
     {
         Health -= damage;
+        if (damage > 0f) BattlegroundPlantHit.ReportDamage(gameObject, Health);
         if (Health <= 0)
         {
             Die();
@@ -34,6 +40,8 @@ public class IceCream : MonoBehaviour
     {
         GameData.setTimeScale(0.5f);
         GameData.freeze = true;
+        GameData.freezeRequests++;
+        GameAudio.Play(Sfx.Freeze);
         GameData.icecreamLocations.Remove(this);
         Destroy(gameObject);
     }
@@ -44,11 +52,11 @@ public class IceCream : MonoBehaviour
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

@@ -30,7 +30,7 @@ public class playerController : MonoBehaviour
     }
 
     public void FixedUpdate(){
-       rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+       rb.linearVelocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
 
        if(Input.GetKey("right") || Input.GetKey(KeyCode.D)){
         this.GetComponent<SpriteRenderer>().flipX = false;

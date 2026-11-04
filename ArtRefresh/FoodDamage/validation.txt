@@ -1,0 +1,1 @@
+PASS: 152 Unity preview checks. Actual prefab damage methods, two wear thresholds, render-only recoil, status tints, cache, bar fade, disable/enable. Not a gameplay playthrough.

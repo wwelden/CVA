@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class Salsa : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, Health);
+    }
+
     private Vector2 Position;
     private float Health = 10;
     // private float duration = 20;
@@ -24,6 +29,7 @@ public class Salsa : MonoBehaviour
     public void TakeDamage(float damage)
     {
         Health -= damage;
+        if (damage > 0f) BattlegroundPlantHit.ReportDamage(gameObject, Health);
         if (Health <= 0)
         {
             Die();
@@ -34,6 +40,8 @@ public class Salsa : MonoBehaviour
     {
         GameData.BurnEM();
         GameData.burn = true;
+        GameData.burnRequests++;
+        GameAudio.Play(Sfx.Burn);
         GameData.salsaLocations.Remove(this);
         Destroy(gameObject);
     }
@@ -44,11 +52,11 @@ public class Salsa : MonoBehaviour
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

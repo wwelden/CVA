@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        BattlegroundAlienMotion.Attach(gameObject);
     }
 
     void Update()
@@ -28,7 +29,9 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Pancakes")){
 
             GameData.playerScore += 100;
+            BattleFeedback.ScorePopup(transform.position + Vector3.up * 0.4f, "+100");
             speed = 0;
+            GetComponent<BattlegroundAlienMotion>().Pancake();
             spriteRenderer.color = new Color(0.6f, 0.4f, 0.2f, 1f); // Brown color
 
         }
@@ -39,7 +42,12 @@ public class Enemy : MonoBehaviour
             {
                 GameData.playerScore += 100;
                 GameData.enemies.Remove(this);
+                BattleFeedback.AlienKilled(gameObject, 100, false);
                 Destroy(gameObject);
+            }
+            else
+            {
+                BattleFeedback.AlienHit(gameObject);
             }
         }
         else if (collision.gameObject.CompareTag("GameEnd"))
@@ -50,24 +58,22 @@ public class Enemy : MonoBehaviour
 
     public void SetTrajectory(Vector2 direction)
     {
-        rb.velocity = direction * speed;
+        rb.linearVelocity = direction * speed;
     }
 
     public void GameOver()
     {
-        rb.velocity = Vector2.zero;
-        if(GameData.playerScore > GameData.highScore){
-            GameData.highScore = GameData.playerScore;
-        }
-        SceneManager.LoadScene("GameOver");
+        rb.linearVelocity = Vector2.zero;
+        GameData.RecordHighScore();
+        SceneFader.Load("GameOver");
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class Lasagna : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, Health);
+    }
+
     public float speed = 2f;
     public int lives = 3;
     public float Health = 30;
@@ -23,14 +28,9 @@ public class Lasagna : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("Shot"))
-        {
-            TakeDamage(2); //might change
-        }
-    }
     public void TakeDamage(float damage){
       Health -= damage;
+      if (damage > 0f) BattlegroundPlantHit.ReportDamage(gameObject, Health);
       if(Health <= 0){
         Die();
       }
@@ -41,11 +41,11 @@ public class Lasagna : MonoBehaviour
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

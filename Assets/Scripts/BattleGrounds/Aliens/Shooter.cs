@@ -28,6 +28,7 @@ public class Shooter : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         attackAnimation = GetComponent<PantryProwlerAnimation>();
+        BattlegroundAlienMotion.Attach(gameObject);
     }
 
     void Update(){
@@ -42,7 +43,9 @@ public class Shooter : MonoBehaviour
         if (collision.gameObject.CompareTag("Pancakes")){
             pancaked = true;
             GameData.playerScore += 250;
+            BattleFeedback.ScorePopup(transform.position + Vector3.up * 0.4f, "+250");
             speed = 0;
+            GetComponent<BattlegroundAlienMotion>().Pancake();
             spriteRenderer.color = new Color(0.6f, 0.4f, 0.2f, 1f); // Brown color
 
         }
@@ -53,7 +56,12 @@ public class Shooter : MonoBehaviour
             {
                 GameData.playerScore += 250;
                 GameData.shooters.Remove(this);
+                BattleFeedback.AlienKilled(gameObject, 250, false);
                 Destroy(gameObject);
+            }
+            else
+            {
+                BattleFeedback.AlienHit(gameObject);
             }
         }
         else if (collision.gameObject.CompareTag("GameEnd"))
@@ -64,25 +72,28 @@ public class Shooter : MonoBehaviour
 
     public void SetTrajectory(Vector2 direction)
     {
-        rb.velocity = direction * speed;
+        rb.linearVelocity = direction * speed;
     }
 
     public void GameOver()
     {
-        rb.velocity = Vector2.zero;
-        if(GameData.playerScore > GameData.highScore){
-            GameData.highScore = GameData.playerScore;
-        }
-        SceneManager.LoadScene("GameOver");
+        rb.linearVelocity = Vector2.zero;
+        GameData.RecordHighScore();
+        SceneFader.Load("GameOver");
     }
 
-    private void OnTriggerEnter2D(Collider2D other){
-        if(reloading == false && pancaked == false){
-            if (other.gameObject.CompareTag("Food")){
-                reloading = true;
-                StartCoroutine(FireAndReload());
-
-            }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (reloading || pancaked) return;
+        bool isPlant = other.GetComponentInParent<Salad>() != null ||
+            other.GetComponentInParent<Lasagna>() != null ||
+            other.GetComponentInParent<IceCream>() != null ||
+            other.GetComponentInParent<Salsa>() != null ||
+            other.GetComponentInParent<Pancakes>() != null;
+        if (isPlant || other.CompareTag("Food"))
+        {
+            reloading = true;
+            StartCoroutine(FireAndReload());
         }
     }
 
@@ -128,11 +139,11 @@ public class Shooter : MonoBehaviour
     }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {

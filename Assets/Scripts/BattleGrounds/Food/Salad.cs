@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class Salad : MonoBehaviour
 {
+    private void Awake()
+    {
+        BattlegroundPlantHit.Attach(gameObject, Health);
+    }
+
   private Vector2 Position;
   public float Health = 10;
   public Tomato tomatoPrefab;
@@ -25,6 +30,7 @@ public class Salad : MonoBehaviour
 
   public void TakeDamage(float damage){
     Health -= damage;
+    if (damage > 0f) BattlegroundPlantHit.ReportDamage(gameObject, Health);
     if(Health <= 0){
       Die();
     }
@@ -46,20 +52,13 @@ public class Salad : MonoBehaviour
       }
   }
 
-    private void OnTriggerEnter2D(Collider2D other){
-        // Debug.Log("Trigger Entered");
-        if (other.gameObject.CompareTag("Shot"))
-        {
-           TakeDamage(1);
-        }
-    }
     public void TurnBlue()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = StatusTint.Frozen;
     }
     public void TurnRed()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        GetComponent<SpriteRenderer>().color = StatusTint.Burning;
     }
     public void TurnWhite()
     {
