@@ -4,6 +4,8 @@ The greatest game of all time.
 
 Chefs vs Aliens is a 2D Unity game where you cook food in kitchen minigames, then use it to defend your kitchen from waves of hungry aliens.
 
+![Lasagna and salad defenders fire at approaching aliens on the kitchen grid](docs/gameplay/battlegrounds.jpg)
+
 ## Play it
 
 | Checkpoint | Link |
@@ -11,6 +13,13 @@ Chefs vs Aliens is a 2D Unity game where you cook food in kitchen minigames, the
 | Sprint 1 | [pbland.itch.io/cva](https://pbland.itch.io/cva) |
 | Sprint 2 | [lcarter343.itch.io/cva](https://lcarter343.itch.io/cva) |
 | Final Game | [wwelden.itch.io/cva31](https://wwelden.itch.io/cva31) |
+| CVA Remastered | [cva-psi.vercel.app](https://cva-psi.vercel.app) |
+
+## Gameplay screenshots
+
+| Kitchen Prep | Oven minigame |
+|---|---|
+| ![Luigi stands between the lasagna, vegetable chopping, and pie baking stations](docs/gameplay/kitchen-prep.jpg) | ![A moving thermometer and a green timing zone sit above a pie in the oven](docs/gameplay/oven-minigame.jpg) |
 
 ## How the game works
 
