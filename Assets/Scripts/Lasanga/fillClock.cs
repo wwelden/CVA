@@ -16,7 +16,6 @@ public class fillClock : MonoBehaviour
     }
     public void Update(){
         currTime = PlayerPrefs.GetFloat("Timer");
-        Debug.Log("HERE" + currTime);
 
         fill.fillAmount = Mathf.InverseLerp(0, totTime, currTime);
       

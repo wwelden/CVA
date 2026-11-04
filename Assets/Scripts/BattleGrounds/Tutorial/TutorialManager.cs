@@ -50,7 +50,7 @@ public class TutorialManager : MonoBehaviour
         // gameManager.GreyOutBackground();
         Wait();
         yield return new WaitForSeconds(0.5f);
-        tutorialText.text = "Welcome to the tutorial! (Press the enter to continue!)";
+        tutorialText.text = "Welcome to the tutorial! (Press enter to continue!)";
         Wait();
         yield return new WaitForSeconds(0.5f);
         tutorialText.text = "You will need to place food to prevent the aliens from getting behind the counter!";
@@ -86,7 +86,7 @@ public class TutorialManager : MonoBehaviour
         tutorialText.text = "You can resume the game by pressing the resume button in the top right or pressing the p key again.";
         Wait();
         yield return new WaitForSeconds(0.5f);
-        tutorialText.text = "You can also press f to toggle fast forward once you feel you have a strong set up, however we would not recomend that until you have become more familar with how to play the game.";
+        tutorialText.text = "You can also press f to toggle fast forward once you feel you have a strong set up, however we would not recommend that until you have become more familiar with how to play the game.";
         Wait();
         yield return new WaitForSeconds(0.5f);
         tutorialText.text = "Good luck!\n (Press enter when you are ready!)";

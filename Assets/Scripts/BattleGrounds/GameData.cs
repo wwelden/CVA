@@ -41,6 +41,8 @@ public static class GameData
     public static float fastTime = regularTime * 3;
     public static bool freeze = false;
     public static bool burn = false;
+    // How long pancake syrup holds an alien in place before it wears off.
+    public const float syrupStuckSeconds = 4f;
     public static bool isFast = false;
     public static bool paused = false;
 

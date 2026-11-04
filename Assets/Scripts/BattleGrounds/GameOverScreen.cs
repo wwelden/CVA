@@ -12,8 +12,9 @@ public class GameOverScreen : MonoBehaviour
     {
         GameData.RecordHighScore();
         bool newBest = GameData.playerScore > 0 && GameData.playerScore >= GameData.highScore;
-        gameOverText.text = "Game Over\nScore: " + GameData.playerScore +
-            "\n<size=60%>" + (newBest ? "New high score!" : "Best: " + GameData.highScore) + "</size>";
+        // Two lines only: a third line at this font size runs down into the menu button.
+        gameOverText.text = "Game Over\n<size=45%>Score: " + GameData.playerScore + "   " +
+            (newBest ? "New high score!" : "Best: " + GameData.highScore) + "</size>";
         GameAudio.Play(Sfx.GameOver, 0.9f, 0f);
 
         goToMenuBtn.onClick.AddListener(GoToMenu);

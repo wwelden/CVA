@@ -15,10 +15,11 @@ public class SkipButton : MonoBehaviour
 
     void Skip()
     {
+        // Music/Source are destroyed by the first skip, so they're absent on later playthroughs.
         Music music = FindObjectOfType<Music>();
-        music.StopMusic();
+        if (music != null) music.StopMusic();
         Source source = FindObjectOfType<Source>();
-        Destroy(source.gameObject);
+        if (source != null) Destroy(source.gameObject);
         SceneFader.Load("KitchenPrep");
     }
 }
