@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/SauceScript.cs.meta
 guid: 72a1d91eec37444de8c1cc72edaaed8c
-========
-guid: dfa4f237caa91419998048cf484b360d
->>>>>>>> 11b54bc93fa6c8348ff4fe20e46b1a7a9b9eb11b:Assets/Scripts/GameSelector.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

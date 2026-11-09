@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/LasagnaStartGame.unity.meta
 guid: 46d146b63a4504402a0eb49fb55c36fe
-========
-guid: 37b16b120102841b6b5391906ed1413e
->>>>>>>> 94f61f1 (game selection page, wave screens, game over screen):Assets/Scenes/GameOver.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

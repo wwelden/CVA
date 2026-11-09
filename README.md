@@ -21,12 +21,6 @@ Chefs vs Aliens is a 2D Unity game where you cook food in kitchen minigames, the
 |---|---|
 | ![Luigi stands between the lasagna, vegetable chopping, and pie baking stations](docs/gameplay/kitchen-prep.jpg) | ![A moving thermometer and a green timing zone sit above a pie in the oven](docs/gameplay/oven-minigame.jpg) |
 
-## Gameplay screenshots
-
-| Kitchen Prep | Oven minigame |
-|---|---|
-| ![Luigi stands between the lasagna, vegetable chopping, and pie baking stations](docs/gameplay/kitchen-prep.jpg) | ![A moving thermometer and a green timing zone sit above a pie in the oven](docs/gameplay/oven-minigame.jpg) |
-
 ## How the game works
 
 1. **Kitchen Prep.** Walk the chef around the kitchen and step up to a cooking station to start its minigame:
