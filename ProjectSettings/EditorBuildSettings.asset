@@ -53,9 +53,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OvenMinigame.unity
     guid: 0a4a6df97e6dcbf42a98875593405b36
-  - enabled: 0
-    path: Assets/Scenes/WaveScreen.unity
-    guid: baa469ab8d27241329c86b3d16d75845
   - enabled: 1
     path: Assets/Scenes/EndPrepTime.unity
     guid: e89e4245e9a3e0844905fe5494e89da0

@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/OvenMinigame.unity.meta
 guid: 0a4a6df97e6dcbf42a98875593405b36
-========
-guid: 794c67ab7323a499cb9d31bfa1ee2f0c
->>>>>>>> 94f61f1 (game selection page, wave screens, game over screen):Assets/Scenes/GameSelector.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

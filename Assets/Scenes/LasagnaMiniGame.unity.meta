@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/LasagnaMiniGame.unity.meta
 guid: e31ecf47707506d429ba7cca504563b3
-========
-guid: f3636bac0be7f47a4977425b24fff4c3
->>>>>>>> 94f61f1 (game selection page, wave screens, game over screen):Assets/Scenes/WaveScreen.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
