@@ -18,6 +18,13 @@ static class Program
     }
     static void Trigger(Shooter shooter) => Call(shooter, "OnTriggerEnter2D", new Collider2D { gameObject = new GameObject { tag = "Food" } });
     static void Wait(IEnumerator routine, float seconds, string label) => Check(routine.Current is WaitForSeconds w && Math.Abs(w.seconds - seconds) < .0001f, label);
+    /// <summary>
+    /// Runs assertions against the linked shooting, animation and projectile sources using lightweight Unity stubs.
+    /// </summary>
+    /// <remarks>
+    /// Advances coroutines manually to verify timing and cancellation without an engine scheduler.
+    /// Prints the assertion count on success; an assertion failure throws and gives CI a nonzero exit code.
+    /// </remarks>
     public static void Main()
     {
         var (s,b,a)=Make(); UnityEngine.Object.Shots.Clear();
@@ -108,6 +115,10 @@ public static class GameData
 }
 public class BattlegroundAlienMotion : MonoBehaviour
 {
+    /// <summary>
+    /// Adds the motion collaborator stub only when absent so Shooter can resolve it during syrup recovery.
+    /// </summary>
+    /// <param name="owner">The stub GameObject that owns the Shooter under test.</param>
     public static void Attach(GameObject owner)
     {
         if (owner.GetComponent<BattlegroundAlienMotion>() == null)
