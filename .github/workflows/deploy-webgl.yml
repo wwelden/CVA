@@ -1,4 +1,4 @@
-# Builds the WebGL player with Unity (GameCI) and deploys it to Vercel production
+# Manually builds the WebGL player with Unity (GameCI) and deploys it to Vercel production
 # (cva-psi.vercel.app). Vercel can't run Unity, so the build happens here and the
 # finished Builds/WebGL folder is uploaded with the Vercel CLI.
 #
@@ -10,14 +10,12 @@
 name: Deploy WebGL to Vercel
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# A newer push supersedes a build that's still running.
+# A newer manual run supersedes a build that's still running.
 concurrency:
   group: deploy-webgl
   cancel-in-progress: true

@@ -1,10 +1,11 @@
-# Automatic Vercel deployment
+# Manual Vercel deployment
 
-Every push to `main` runs [Deploy WebGL to Vercel](https://github.com/wwelden/CVA/actions/workflows/deploy-webgl.yml).
+Pushes and pull requests do not deploy the game. To deploy, manually run
+[Deploy WebGL to Vercel](https://github.com/wwelden/CVA/actions/workflows/deploy-webgl.yml)
+using **Run workflow** with `main` selected.
 GitHub Actions builds the game with the Unity version in `ProjectSettings/ProjectVersion.txt`,
 then uses Bun and Vercel CLI to upload `Builds/WebGL` to production at
 [cva-psi.vercel.app](https://cva-psi.vercel.app).
-Other branches do not deploy. You can also run the workflow manually on `main`.
 
 ## One-time credentials
 
@@ -27,7 +28,7 @@ If the project moves to another team, update both identifiers in the workflow.
 
 ## Verify a deployment
 
-After configuring the secrets, push to `main` or choose **Run workflow** on the
+After configuring the secrets, choose **Run workflow** on the
 Actions page with `main` selected. Confirm both the Unity build and Vercel deployment
 steps succeed, then open the production URL. The first Unity import can take longer;
 later runs reuse the cached `Library` folder.
