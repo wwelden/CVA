@@ -53,6 +53,20 @@ Debug shortcuts on the wave screen: **L** skips kitchen prep, **G** adds 1000 fo
 
 To build, use **File → Build Profiles**. The scene list is already set in the build settings, with `MainMenu` first. The itch.io releases are WebGL builds.
 
+## Unit tests
+
+Install the .NET 9 SDK, then run from the repository root:
+
+```sh
+dotnet run --project ArtRefresh/PantryProwlerShoot/Tests/Check.csproj --configuration Release
+```
+
+If you have multiple SDK versions installed, run from `ArtRefresh/PantryProwlerShoot/Tests` instead (`dotnet run --project Check.csproj --configuration Release`); its `global.json` selects .NET 9.
+
+The assertion harness compiles the actual `Shooter`, `PantryProwlerAnimation` and `AlienShot` sources against lightweight Unity API and collaborator stubs. It covers attack timing, cooldown, interruption and syrup recovery, projectile speed, damage, duplicate hits and cleanup. A failed assertion or compilation returns a nonzero exit code. Use `dotnet run` to execute the assertions; this project does not use a `dotnet test` adapter.
+
+[Unit tests](.github/workflows/unit-tests.yml) runs the harness on every branch push and pull request, without branch or path filters. It needs no Unity license or deployment secrets. These tests do not run Unity physics, rendering, scene wiring, collaborator implementations or a full game compilation. WebGL deployment remains a separate manual workflow; see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ## Project layout
 
 ```
